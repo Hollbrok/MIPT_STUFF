@@ -1,0 +1,19 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Введение}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Общие сведения о волчке Tippe Top}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Описание поведения волчка }{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Описание новых систем координат}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Подробное описание поведения волчка}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Небольшое вступление в теорию описания}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Поиск внешних сил}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Поиск общего внешнего крутящего момента $\tau _{ext}$ на вершите Tippe Top'a относительно центра масс}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Движение в точке касания ($A$)}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Угловая скорость $\omega $ вращающегося волчка относительно его центра масс $C$}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Полная энергия вращения волчка}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Изменение момента импулься относительно оси $z$}{7}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Выражение для мгновенной скорости изменения энергии волчка}{7}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Построение и анализ графиков функций энергий от времени}{8}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Связь компонентов углового момента $L$ и угловой скорости $\omega $}{9}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Интеграл Джеллетта}{9}{subsection.2.11}%
+\contentsline {section}{\numberline {3}Заключение}{10}{section.3}%
+\contentsline {section}{\numberline {4}Список используемой литературы}{10}{section.4}%
