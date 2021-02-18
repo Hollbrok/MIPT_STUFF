@@ -1,0 +1,12 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Аннотация}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Теоретические сведения}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Оценка потерь тепла}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Экспериментальная установка}{3}{section.2}%
+\contentsline {section}{\numberline {3}Ход работы}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Время установления равновесного теплового потока}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Калибровка термопары}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Проверка предположения}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Основной опыт}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Оценка потерь через боковые поверхности}{6}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Вывод}{6}{section.4}%
