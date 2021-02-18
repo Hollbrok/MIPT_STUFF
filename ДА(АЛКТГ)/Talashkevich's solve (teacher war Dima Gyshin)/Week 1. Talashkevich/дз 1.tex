@@ -1,0 +1,303 @@
+\documentclass[a4paper,12pt]{article} % тип документа
+
+
+%  Русский язык
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+
+
+\usepackage{wasysym}
+
+%Заговолок
+\author{Талашкевич Даниил Александрович}
+
+\title{Домашнее задание по дискретному анализу. Неделя 1. Алгебра логики. Введение}
+
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\newpage
+\begin{center}
+\section*{Задача 1}
+\end{center}
+
+Согласно условию задачи,
+\[ \neg{(x=y)} \land((y<x) \to (2z>x)) \land((x<y) \to (x>2z)) =1\]
+Так как это выражение - истина, тогда истине равны:
+
+$a)$ $\neg{(x=y)}=1$ 
+
+$b)$ $(y<x) \to (2z>x)=1$
+
+$c)$ $(x<y) \to (x>2z)=1$ \\
+
+Из пункта а) следует, что $x \neq y$, то есть $x \neq 16$.
+
+Пункт б) выполняется всегда, кроме случая:
+
+\[\begin{cases}
+  (y < x) = 1\\
+  (2z>x)=0
+\end{cases}\] 
+\[\begin{cases}
+  x>y\\
+  x\geqslant 2z
+\end{cases}\]
+ \[\begin{cases}
+  x>16\\
+  x\geqslant 14
+\end{cases}\]
+\[ x>16\]
+То есть пункт б) выполняется, если
+\[ x\leqslant15\]
+Пункт в) отличается от б) только знаками неравенств:
+\[ x\geqslant15\]
+В итоге получили систему уравнений:
+\[\begin{cases}
+  x\geqslant15\\
+  x\leqslant15\\
+  x \neq 16
+\end{cases}\]
+\[x = 15\]
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: 15}
+\end{large}
+\end{flushright}
+\newpage
+\begin{center}
+\section*{Задача 2}
+\end{center}
+\[f(x,y,z)=\neg{((x \wedge \neg y)\wedge z)}\]
+Найдём все значения функции для построения таблицы истинности:
+\[f(0,0,0)=\neg{((0 \wedge \neg 0)\wedge 0)}=\neg{(0\wedge 0)}=1\]
+\[f(0,0,1)=\neg{((0 \wedge \neg 0)\wedge 1)}=\neg{(0\wedge 1)}=1\]
+\[f(0,1,0)=\neg{((0 \wedge \neg 1)\wedge 0)}=\neg{(0\wedge 0)}=1\]
+\[f(0,1,1)=\neg{((0 \wedge \neg 1)\wedge 1)}=\neg{(0\wedge 1)}=1\]
+\[f(1,0,0)=\neg{((1 \wedge \neg 0)\wedge 0)}=\neg{(1\wedge 0)}=1\]
+\[f(1,0,1)=\neg{((1 \wedge \neg 0)\wedge 1)}=\neg{(1\wedge 1)}=0\]
+\[f(1,1,0)=\neg{((1 \wedge \neg 1)\wedge 0)}=\neg{(0\wedge 0)}=1\]
+\[f(1,1,1)=\neg{((1 \wedge \neg 1)\wedge 1)}=\neg{(1\wedge 0)}=1\]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x$ & $y$ & $z$ & $f(x,y,z)$ \\
+\hline
+0 & 0 & 0 & 1 \\
+\hline
+0 & 0 & 1 & 1 \\
+\hline
+0 & 1 & 0 & 1 \\
+\hline
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 1 \\
+\hline
+1 & 0 & 1 & 0 \\
+\hline
+1 & 1 & 0 & 1 \\
+\hline
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\section*{Задача 3}
+\end{center}
+\[1\oplus x_1 \oplus x_2 = (x_1\rightarrow x_2) \wedge (x_2\rightarrow x_1) \]
+Для доказательства рассмотрим, когда (в каких случаях) оба выражения равны истине:\\
+
+$1)$ $f_1(x_1, x_2)= (1\oplus x_1) \oplus x_2 =1$
+
+$ a)$ если $x_1=0,$ то $x_2=0,$
+
+$ b)$ если $x_1=1,$ то $x_2=1,$
+То есть $x_1 = x_2,$ если $f_1(x_1, x_2)=1$ \\
+
+$2)$ $f_2(x_1, x_2)= (x_1\rightarrow x_2) \wedge (x_2\rightarrow x_1)=1$
+
+Заметим, что $x_1 = x_2 =0$ или $x_1 = x_2 =1$, иначе возникает ситуация $1\rightarrow 0 = 0$, то есть $x_1 = x_2,$ если $f_2(x_1, x_2)=1$ \\
+
+Оба выражения равны истине только тогда, когда $x_1 = x_2$, в остальных случаях $(x_1 \neq x_2)$ они равны нулю (лжи), то есть булевы функции $f_1(x_1, x_2)$ и $f_2(x_1, x_2)$ ведут себя одинаково при различных $x_1$ и $x_2$, значит они эквивалентны.
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+
+\begin{center}
+\section*{Задача 4}
+\end{center}
+
+
+$a)$ $x\wedge (y\rightarrow z) =(x\wedge y)\rightarrow(x\wedge z)$\\
+
+Пусть $x=0$, тогда выражение слева в $a)$ всегда равно нулю \[(0\wedge (y\rightarrow z))=0\]
+
+Значит \[(x\wedge y)\rightarrow(x\wedge z)=0\]
+
+\[\begin{cases}
+  x\wedge y = 1\\
+  x\wedge z = 0
+\end{cases}\]
+\[x=y=1\]
+Получили, что $x=1$, предполагая, что $x=0$.
+ \underline{Противоречие. Дистрибутивность не выполянется.}\\
+ $b)$ $x\oplus (y \leftrightarrow z) = (x\oplus y)\leftrightarrow (x\oplus z)$ \\
+
+Предположим, что выражение слева $(x\oplus (y \leftrightarrow z))$ равно истине, тогда:
+\begin{equation}x\oplus (y \leftrightarrow z)=1
+\end{equation}
+\begin{equation}(x\oplus y)\leftrightarrow (x\oplus z)=1
+\end{equation}
+
+Рассмотрим решение уравнения $(1)$: случай 1:
+\[\begin{cases}
+  x\oplus y = 1\\
+  x\oplus z = 1
+\end{cases}\]
+\[y=z\neq x\]
+Рассмотрим случай 2:
+\[\begin{cases}
+  x\oplus y = 0\\
+  x\oplus z = 0
+\end{cases}\]
+\[y=z = x\]
+В любом случае в решении $(x\oplus y)\leftrightarrow (x\oplus z)=1$ выполняется $y=z$.
+  
+Решением уравнения $(2)$ являются 2 системы:
+ \begin{equation}\begin{cases}
+  x = 0\\
+  y =z
+\end{cases} \end{equation}
+ \begin{equation}\begin{cases}
+  x = 1\\
+  y \neq z
+\end{cases} \end{equation}
+ То есть одно из решений содержит $y \neq z$, но в решении уравнения $(1)$ всегда $y=z$.
+\underline{Противоречие. Дистрибутивность не выполянется.}
+\newpage
+\begin{center}
+\section*{Задача 5}
+\end{center}
+
+$a)$ \underline{Коммутативность для импликации} $x\rightarrow y =y\rightarrow x$ \underline{не выполняется}, так как если $x=0, y=1$, то $0\rightarrow 1=1$, но $1\rightarrow 0=0$ \\
+
+$b)$ \underline{Ассоциативность} $(x\rightarrow y)\rightarrow z = x\rightarrow (y\rightarrow z) $ \underline{не выполняется}, так как при если $x=0$, то $x\rightarrow (y\rightarrow z)=1$ при любых $y$ и $z$, при этом $x\rightarrow y=1$, но если $z=0$, то $(x\rightarrow y)\rightarrow z =0$, в то время как $x\rightarrow (y\rightarrow z)=1$ \\
+
+\begin{center}
+\item \section*{Задача 6}
+\end{center}
+
+$a)$ $f(x_1,x_2,x_3)=00111100$
+
+Для наглядности составим  таблицу истинности:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_3$ & $f(x_1,x_2,x_3)$ \\
+\hline
+0 & 0 & 0 & 0 \\
+\hline
+0 & 0 & 1 & 0 \\
+\hline
+0 & 1 & 0 & 1 \\
+\hline
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 1 \\
+\hline
+1 & 0 & 1 & 1 \\
+\hline
+1 & 1 & 0 & 0 \\
+\hline
+1 & 1 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+Заметим, что при $x_1=x_2$ выходит $f(x_1,x_2,x_3)=0$, а в других случаях $f(x_1,x_2,x_3)=1$, значит \underline{$x_1$ и $x_2$ - существенные переменные, а $x_3$ - фиктивная.} \\
+
+$b)$ $g(x_1,x_2,x_3)=(x_1\rightarrow (x_1\vee x_2))\rightarrow x_3$
+
+Если $x_1=1$, то $(x_1\rightarrow (x_1\vee x_2))=(1\rightarrow 1)=1$.
+
+Если $x_1=0$, то $(x_1\rightarrow (x_1\vee x_2))=(0\rightarrow (0\vee x_2))=1$.
+
+Получили, что $(x_1\rightarrow (x_1\vee x_2))=1$ не зависит от $x_1$ и тем более от $x_2$, значит $g(x_1,x_2,x_3)=1\rightarrow x_3$.
+Итак, \underline{$x_1$ и $x_2$ - фиктивные переменные, а $x_3$ - существенная переменная.}
+
+\newpage
+\begin{center}
+\section*{Задача 7}
+\end{center}
+\[f(x_1,...,x_n)=(x_1\vee f(0,x_2,...,x_n))\wedge (\neg x_1 \vee f(1,x_2,...,x_n))\]
+
+$1)$ Пусть $f(0,x_2,...,x_n)=0$, тогда:
+\[f(0,x_2,...,x_n)=(0\vee f(0,x_2,...,x_n))\wedge (1 \vee f(1,x_2,...,x_n))=0\wedge 1 =0\]
+Выражение выполняется.
+
+$2)$ Пусть $f(0,x_2,...,x_n)=1$, тогда:
+\[f(0,x_2,...,x_n)=(0\vee f(0,x_2,...,x_n))\wedge (1 \vee f(1,x_2,...,x_n))=1\wedge 1 =1\]
+Выражение выполняется.
+
+$3)$ Пусть $f(1,x_2,...,x_n)=0$, тогда:
+\[f(1,x_2,...,x_n)=(1\vee f(0,x_2,...,x_n))\wedge (0 \vee f(1,x_2,...,x_n))=1\wedge 0 =0\]
+Выражение выполняется.
+
+$4)$ Пусть $f(1,x_2,...,x_n)=1$, тогда:
+\[f(0,x_2,...,x_n)=(1\vee f(0,x_2,...,x_n))\wedge (0 \vee f(1,x_2,...,x_n))=1\wedge 1 =1\]
+
+Выражение выполняется.
+
+Итак, исходное равенство выполняется для любых функций с любыми значениями $x_1$. Интересно также отметить, что равенство выполняется для любого аргумента $x_i$ $(0\leqslant i\leqslant n)$, так как аргументы являются независимыми.
+
+\newpage
+\begin{center}
+\section*{Задача 8}
+\end{center}
+\[x_1^{\alpha_1}\wedge x_2^{\alpha_2} \wedge ... \wedge x_n^{\alpha_n}=1\]
+
+Равенство возможно только в одном случае: $x_i^{\alpha_i}=1$ $(1\leqslant i\leqslant n)$. Значение $x_i^{\alpha_i}$ зависит от $x_i$ и $\alpha_i$: если $x_i=0$, то $\alpha_i=0$, чтобы $x_i^{\alpha_i}=1$ и если $x_i=1$, то $\alpha_i=1$, чтобы $x_i^{\alpha_i}=1$. Определённому значению $x_i$ соответсвует определённое $\alpha_i$, значит если выбран определённый набор $x_1,...,x_n$, ему будет соответствовать единственный набор $\alpha_1,...,\alpha_n$ \\\\
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+
+\begin{center}
+\section*{Задача 9}
+\end{center}
+\[\bigvee \limits_{i, j} (x_i\oplus x_j)=(x_1\vee x_2 \vee ... \vee x_n)\wedge (\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n}) \]
+$1)$ $\bigvee \limits_{i, j} (x_i\oplus x_j)=1$, если хотя бы одна комбинация $x_i$ и $x_j$ отличается по значениям. В этом же случае $(x_1\vee x_2 \vee ... \vee x_n)=1$, так как среди $x_i$ будет по крайней мере одна единица, и $(\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})= 1$, так как по крайней мере найдётся одно значение $x_i=0$, а значит $\overline{x_i}=1$. Значит
+\[\bigvee \limits_{i, j} (x_i\oplus x_j)=(x_1\vee x_2 \vee ... \vee x_n)\wedge (\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})=1 \]
+
+Получается, что равенство в условии выполняется.\\
+$2)$ $\bigvee \limits_{i, j} (x_i\oplus x_j)=0$, если все значения $x_i$ равны (0 или 1), значит либо $(x_1\vee x_2 \vee ... \vee x_n)=0$, либо $(\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})= 0$, тогда
+\[\bigvee \limits_{i, j} (x_i\oplus x_j)=(x_1\vee x_2 \vee ... \vee x_n)\wedge (\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})=0 \]
+
+Равенство в условии снова выполняется, значит оно справедливо для любых значений $x_i$.
+
+\newpage
+\begin{center}
+\section*{Задача 10}
+\end{center}
+\par
+Пусть булева функция выражается только через связки $\vee$ и $\wedge$. Заметим, что эти связки могут только либо сохранять предыдущие значения выражений (переменных), либо увеличивать их до 1, значит функции, использующие только эти связки - нестрого возрастающие. Получается, что нестрого или строго убывающую функцию эти связки описать не могут (перевести 1 в 0), для этого как минимум требуется использовать связку $\neg$.
+Значит существует убывающая функция, которая не может быть описана только связками $\vee$ и $\wedge$.
+
+
+\end{document}
+

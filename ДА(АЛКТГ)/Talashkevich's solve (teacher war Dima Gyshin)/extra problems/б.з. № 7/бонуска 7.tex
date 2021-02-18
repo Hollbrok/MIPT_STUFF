@@ -1,0 +1,64 @@
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+
+% Русский язык
+\usepackage[T2A]{fontenc} % кодировка
+\usepackage[utf8]{inputenc} % кодировка исходного текста
+\usepackage[english,russian]{babel} % локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+
+
+\usepackage{wasysym}
+
+%Заговолок
+\author{Талашкевич Даниил Александрович}
+
+\title{Бонусная задача. Неделя № 7}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+\begin{center}
+\itshape
+\bfseries
+{ \Large БОНУСНАЯ ЗАДАЧА № 	7}
+\end{center}
+
+{\bf (*) } Найдите число треугольников с целочисленными сторонами и периметром $N$. (Подсказка: ответ зависит от остатка $N$ при делениина $12$).
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+Без ограничений общности $a\leqslant b \leqslant c$ и должно выполняться условие $a+b > c$.
+
+Ясно, что $c$ может принимать значения от $\left[ \frac{N}{3}\right] + 1= c_0$ до $\left[ \frac{N+1}{2}\right]  - 1 = c_1$. Так же обозначим $ $ .Для каждого значения $c$ выполняется $a+b = 100 - c$, значит $b$ может принимать значения от $\frac{N - c}{2}$,а для четных-нечетных $c$ :
+
+1) от $\frac{N}{2} - \frac{c}{2}$ -- при четном $c$. Всего $\frac{3c}{2} - \frac{N}{2} - 1$ вариантов.
+
+2) от $50 - \frac{c-1}{2}$ до $c$ -- при нечетном $c$. Всего $\frac{3c-1}{2} - \frac{N}{2} - 1$.
+
+При $c$ равным $\left[ \frac{N}{3}\right]  + 1 +2n(n \in \mathbb{N})$ получаем :
+\[ \sum\limits_{c = c_0}^{c_1} \frac{3c}{2} - \left[ \frac{N+1}{2}\right]  - 1 \]
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Доказано }
+\end{large}
+\end{flushright}
+
+
+\end{document}
+
+
