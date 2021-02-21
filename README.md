@@ -1,2 +1,17 @@
 # MIPT_LABS
 In this rep u can find my labs for MIPT. (1 sem and 2 sem now). Also solved problems for DA and QBC in physics 1 sem
+# LIST OF LABS:
+ - [X] __1 SEM__
+     - [X] 1.1.4
+     - [X] 1.1.6
+     - [X] 1.2.1
+     - [X] 1.2.3
+     - [X] 1.2.5
+     - [X] 1.3.1
+     - [X] 1.4.5
+- [X] __2 SEM__
+  - [X] 2.2.4
+  - [ ] 2.5.1
+# ALSO
+* Homework for __ДА__ (АЛКТГ).
+* My __ВПВ__ for physics for 1 sem.
