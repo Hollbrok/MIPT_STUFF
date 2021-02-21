@@ -8,5 +8,5 @@
 \contentsline {subsection}{\numberline {3.2}Калибровка термопары}{4}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Проверка предположения}{5}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Основной опыт}{5}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Оценка потерь через боковые поверхности}{6}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Вывод}{6}{section.4}%
+\contentsline {subsection}{\numberline {3.5}Оценка потерь через боковые поверхности}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Вывод}{8}{section.4}%

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.8)  1 MAR 2021 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.8)  1 MAR 2021 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**2.2.4.tex
-(./2.2.4.tex
+**2.5.1.tex
+(./2.5.1.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-06>
 (c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -660,8 +660,12 @@ File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [11.5pt].
 
-(./2.2.4.aux)
-\openout1 = `2.2.4.aux'.
+(./2.5.1.aux
+
+LaTeX Warning: Label `gr:3' multiply defined.
+
+)
+\openout1 = `2.5.1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
@@ -730,141 +734,115 @@ LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
 
-(./2.2.4.out) (./2.2.4.out)
+(./2.5.1.out) (./2.5.1.out)
 \@outlinefile=\write3
-\openout3 = `2.2.4.out'.
+\openout3 = `2.5.1.out'.
 
  [1
 
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./2.2.4.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./2.5.1.toc)
+\tf@toc=\write4
+\openout4 = `2.5.1.toc'.
 
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 \newpage
+              [1]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112
+.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112
+.
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
-
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
+2.
 
 (c:/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-))
-\tf@toc=\write4
-\openout4 = `2.2.4.toc'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 	\newpage
-               [1]
-Overfull \hbox (1.31096pt too wide) in paragraph at lines 109--110
-\T2A/cmr/m/n/10 эф-фи-ци-ен-том теп-ло-про-вод-но-сти. Эта ха-рак-те-ри-сти-ка 
-рав-на ко-ли-че-ству теп-
- []
+l.127 
+       [1]
 
-<pic1.png, id=77, 529.98pt x 261.3765pt>
-File: pic1.png Graphic file (type png)
-<use pic1.png>
-Package pdftex.def Info: pic1.png  used on input line 124.
-(pdftex.def)             Requested size: 317.99043pt x 156.82709pt.
+LaTeX Warning: Command \CYRR invalid in math mode on input line 131.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Missing character: There is no Р in font cmr10!
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.143 \end{equation}
-                     [1] [2 <./pic1.png>]
-Overfull \hbox (0.89142pt too wide) in paragraph at lines 180--181
-[]\T2A/cmr/m/n/10 Переключатель поз-во-ля-ет по-оче-ред-но под-клю-чать тер-мо-
-па-ры к зер-каль-
- []
+LaTeX Warning: Command \CYRR invalid in math mode on input line 131.
 
-[3]
-Overfull \hbox (16.58203pt too wide) in paragraph at lines 182--184
-[]\T2A/cmr/m/n/10 Для уве-ли-че-ния ско-ро-сти на-гре-ва ре-гу-ля-тор мощ-но-ст
-и на-гре-ва-те-ля (Heatinq
- []
-
-
-Overfull \hbox (0.14404pt too wide) in paragraph at lines 211--212
-[]\T2A/cmr/m/n/10 Тогда мож-но оце-нить ко-эф. тем-пе-ра-ту-ро-про-вод-но-сти э
-бо-ни-та: $\OML/cmm/m/it/10 ^^_ \OT1/cmr/m/n/10 = [] =
- []
-
-[4] [5]
-Overfull \hbox (2.90494pt too wide) in paragraph at lines 235--242
- [] 
- []
-
-[6] [7]
-<graph1.png, id=140, 421.575pt x 316.0608pt>
+Missing character: There is no Р in font cmr10!
+[2] [3]
+<graph1.png, id=76, 421.575pt x 316.0608pt>
 File: graph1.png Graphic file (type png)
 <use graph1.png>
-Package pdftex.def Info: graph1.png  used on input line 332.
-(pdftex.def)             Requested size: 252.94695pt x 189.63794pt.
-<graph2.png, id=141, 421.575pt x 316.0608pt>
+Package pdftex.def Info: graph1.png  used on input line 272.
+(pdftex.def)             Requested size: 274.0205pt x 205.43709pt.
+ [4 <./graph1.png (PNG copy)>]
+<graph2.png, id=86, 421.575pt x 316.0608pt>
 File: graph2.png Graphic file (type png)
 <use graph2.png>
-Package pdftex.def Info: graph2.png  used on input line 342.
-(pdftex.def)             Requested size: 252.94695pt x 189.63794pt.
+Package pdftex.def Info: graph2.png  used on input line 282.
+(pdftex.def)             Requested size: 274.0205pt x 205.43709pt.
+<graph3.png, id=87, 421.575pt x 316.0608pt>
+File: graph3.png Graphic file (type png)
+<use graph3.png>
+Package pdftex.def Info: graph3.png  used on input line 290.
+(pdftex.def)             Requested size: 274.0205pt x 205.43709pt.
+ [5 <./graph2.png (PNG copy)> <./graph3.png (PNG copy)>]
+<graph4.png, id=96, 421.575pt x 316.0608pt>
+File: graph4.png Graphic file (type png)
+<use graph4.png>
+Package pdftex.def Info: graph4.png  used on input line 298.
+(pdftex.def)             Requested size: 274.0205pt x 205.43709pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+ [6 <./graph4.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
+ (./2.5.1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+Package rerunfilecheck Info: File `2.5.1.out' has not changed.
+(rerunfilecheck)             Checksum: 93F78871392C945FB7201E676C781FED;1061.
 
-Overfull \hbox (2.29362pt too wide) in paragraph at lines 347--348
-[]\T2A/cmr/m/n/10 И со-от-вет-ствен-ное зна-че-ние в бли-зи к цен-тру $[] \OT1/
-cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 334 [[]\OML/cmm/m/it/10 =[]\OT1
-/cmr/m/n/10 ]\OML/cmm/m/it/10 :$ 
- []
 
-[8 <./graph1.png (PNG copy)> <./graph2.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
- (./2.2.4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
-Package rerunfilecheck Info: File `2.2.4.out' has not changed.
-(rerunfilecheck)             Checksum: 2140E40B101E8EAFE5AF206BB824F3D9;2445.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 15182 strings out of 480876
- 219074 string characters out of 5911488
- 496655 words of memory out of 5000000
- 30559 multiletter control sequences out of 15000+600000
- 546002 words of font info for 52 fonts, out of 8000000 for 9000
+ 15167 strings out of 480876
+ 218880 string characters out of 5911488
+ 492110 words of memory out of 5000000
+ 30553 multiletter control sequences out of 15000+600000
+ 544895 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,45p,1909b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{c:/tex
-live/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2020/texmf-dis
-t/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public
-/cm-super/sfrm0500.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/
-sfrm0700.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
-fb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/tex
-live/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on 2.2.4.pdf (11 pages, 318991 bytes).
+ 43i,11n,45p,1708b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<c:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.p
+fb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/tex
+live/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/
+texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2020/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
+cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/s
+fti1000.pfb>
+Output written on 2.5.1.pdf (8 pages, 309618 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
