@@ -18,3 +18,7 @@ ________
 # ALSO
 * Homework for __ДА__ (АЛКТГ).
 * My __ВПВ__ for physics for 1 sem.
+
+
+### TAGS
+MIPT, LABS, МФТИ, ЛАБЫ, 1 семестр, 2 семестр
