@@ -1,5 +1,8 @@
 # MIPT_LABS
 In this rep u can find my labs for MIPT. (1 sem and 2 sem now). Also solved problems for DA and QBC in physics 1 sem
+_______
+If you to enrage this database write to [me](https://vk.com/danik.princessa), thx ❤️!
+________
 # LIST OF LABS:
  - [X] __1 SEM__
      - [X] 1.1.4
