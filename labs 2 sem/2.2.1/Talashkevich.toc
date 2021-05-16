@@ -1,0 +1,15 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Аннотация}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Цель работы}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Используемое оборудование}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Теоретическое введение}{1}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Экспериментальная установка}{2}{section.2}%
+\contentsline {section}{\numberline {3}Методика измерений}{4}{section.3}%
+\contentsline {section}{\numberline {4}Экспериментальная установка}{5}{section.4}%
+\contentsline {section}{\numberline {5}Ход работы}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Основная часть работы}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Проверка утверждения о независимости коэффициента взаимной диффузии от пропорций компонентов (*)}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Аппроксимация полученных данных}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Заключение}{13}{section.6}%
+\contentsline {section}{\numberline {7}Графики}{13}{section.7}%
+\contentsline {section}{\numberline {8}Список используемой литературы}{14}{section.8}%

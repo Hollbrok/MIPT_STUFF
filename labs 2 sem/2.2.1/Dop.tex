@@ -1,0 +1,121 @@
+\documentclass[a4paper, 12pt]{article} % тип документа
+
+%%%Библиотеки
+	%\usepackage[warn]{mathtext}	
+	\usepackage[english, russian]{babel} %Локализация и переносы
+	\usepackage{caption}
+	\usepackage{listings}
+	\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+	\usepackage[warn]{mathtext}
+	\usepackage[mathscr]{eucal}
+	\usepackage{wasysym}
+	\usepackage{graphicx} %Вставка картинок правильная
+	\usepackage{indentfirst}
+	\usepackage{float}    %Плавающие картинки
+	\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
+	\usepackage{fancyhdr} %Загрузим пакет
+	\usepackage{lscape}
+	\usepackage{xcolor}
+	\usepackage[normalem]{ulem}
+	
+	\usepackage{titlesec}
+	\titlelabel{\thetitle.\quad}
+
+	\usepackage{hyperref}
+
+%%%Конец библиотек
+
+%%%Настройка ссылок
+	\hypersetup
+	{
+		colorlinks = true,
+		linkcolor  = blue,
+		filecolor  = magenta,
+		urlcolor   = blue
+	}
+%%%Конец настройки ссылок
+
+
+%%%Настройка колонтитулы
+	\pagestyle{fancy}
+	\fancyhead{}
+	\fancyhead[L]{2.2.1}
+	\fancyhead[R]{Талашкевич Даниил, группа Б01-009}
+	\fancyfoot[C]{\thepage}
+%%%конец настройки колонтитулы
+
+
+
+\begin{document}
+						%%%%Начало документа%%%%
+
+
+%%%Начало титульника
+\begin{titlepage}
+
+	\newpage
+	\begin{center}
+		\normalsize Московский физико-технический институт \\(госудраственный университет)
+	\end{center}
+
+	\vspace{6em}
+
+	\begin{center}
+		\Large Лабораторная работа по общему курсу физики\\Термодинамика и молекулярная физика
+	\end{center}
+
+	\vspace{1em}
+
+	\begin{center}
+		\Large \textbf{2.2.1. Исследование диффузии газов}
+	\end{center}
+
+	\vspace{2em}
+
+	\begin{center}
+		\large Талашкевич Даниил Александрович\\
+		Группа Б01-009
+	\end{center}
+
+	\vspace{\fill}
+
+	\begin{center}
+		Долгопрудный \\19.04.2021
+	\end{center}
+	
+\end{titlepage}
+%%%Конец Титульника
+
+
+					%%%%%%Начало работы с текстом%%%%%%
+
+Пусть имеются 2 разных газа, например воздух и этилен. Концентрацию этилена считаем малой по сравнению с концентрацией воздуха. Изучим их взаимную диффузию. Пусть $\frac{dN_{12}}{dt}$ -- количество столкновений молекулы газа 1 с молекулами газа 2  в единицу времени, аналогично введём $\frac{dN_{12}}{dt}$. Пусть $\Delta p_1$ -- усреднённое изменение импульса молекулы газа 1 за одно столкновение. Значит в единицу времени полное измнение импульса молекулы газа 1 равно $\Delta p_1 \frac{dN_{12}}{dt} = F_1$ -- средняя сила, действующая на молекулу  газа 1.  
+
+Найдём величину $\frac{dN_{12}}{dt}$. Эта величина определяется стандратным выражением $\frac{dN_{12}}{dt} = n_2 \sigma_{12} v_{\text{отн}}$, которое можно получить, расписывания число соударений через соударения с молекулами газа 1 через раписывания числа соударений через концентрацию и т.д.. Так как температура газов  одинакова, то в среднем $m_1 v_1^2 = m_2 v_2^2$, а
+\begin{equation}
+	v_{\text{отн}} = v_1 \sqrt{\frac{m_1}{\mu}} = v_1 \sqrt{\frac{m_1 + m_2}{m_2}}
+\end{equation}
+
+\begin{equation}
+	\frac{dN_{12}}{dt} = n_2 \sigma_{12} v_{\text{отн}} = n_2 \sigma_{12} v_1 \sqrt{\frac{m_1 + m_2}{m_2}} \Rightarrow \lambda = \frac{1}{n_2 \sigma_{12} \sqrt{\frac{m_1 + m_2}{m_2}}}
+\end{equation}
+
+\begin{equation}
+	v_1 = \sqrt{\frac{8RT}{\pi M}}
+\end{equation}
+
+\begin{equation}
+	D = \frac{1}{3} \sqrt{\frac{8RT}{\pi M}} \frac{1}{n_2 \sigma_{12} \sqrt{\frac{m_1 + m_2}{m_2}}}
+\end{equation}
+
+В нашей ситуации $M = 28$ г/моль. Эта величина почти равна молярной массе воздуха, поэтому 
+\begin{equation}
+	D = \frac{1}{3} \sqrt{\frac{8RT}{\pi M}} \frac{1}{n_2 \sigma_{12} \sqrt{2}} = \frac{2}{3} \sqrt{\frac{RT}{\pi M}} \frac{kT}{\sigma_{12} p} =
+\end{equation}
+
+\[ = \frac{8}{3} \sqrt{\frac{RT}{\pi M}} \frac{kT}{\pi (d_1 + d_2)^2 p} = 9 \cdot 10^{-6} m^2/c\]
+
+
+
+
+\end{document}
