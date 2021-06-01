@@ -1,0 +1,11 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Аннотация}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Цель и оборудование}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Теоретическое введение}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Эксперементальная установка}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Ход работы}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Снятие данных}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Аппроксимация полученных данных}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Заключение}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Графики и таблицы}{5}{section.3}%
+\contentsline {section}{\numberline {4}Список используемой литературы}{6}{section.4}%
