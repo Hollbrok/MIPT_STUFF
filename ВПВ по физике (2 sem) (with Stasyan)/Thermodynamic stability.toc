@@ -4,8 +4,8 @@
 \contentsline {subsection}{\numberline {2.1} Термодинамические неравенста.}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Условие экстремальности Z}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Условие минимума Z}{2}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Условие а)}{2}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1}Условие а)}{3}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Условие б)}{3}{subsubsection.2.3.2}%
 \contentsline {section}{\numberline {3}Смысл условий устойчивости}{4}{section.3}%
-\contentsline {section}{\numberline {4}Общие критерии термодинамической устойчивости}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Критерий термодинамической устойчивости.}{4}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Общие критерии термодинамической устойчивости}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Критерий термодинамической устойчивости.}{5}{subsection.4.1}%

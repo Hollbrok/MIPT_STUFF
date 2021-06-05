@@ -1,5 +1,15 @@
 \documentclass[a4paper,14pt]{article} % тип документа
+%\documentclass[14pt]{extreport}
+\usepackage{extsizes} % Возможность сделать 14-й шрифт
 
+
+\usepackage{geometry} % Простой способ задавать поля
+\geometry{top=25mm}
+\geometry{bottom=35mm}
+\geometry{left=20mm}
+\geometry{right=20mm}
+
+\setcounter{section}{0}
 
 %%%Библиотеки
 %\usepackage[warn]{mathtext}
@@ -18,6 +28,8 @@
 \usepackage{xcolor}
 \usepackage[normalem]{ulem}
 \usepackage{hyperref}
+
+
 
 
 %%% DRAGON STUFF
@@ -226,7 +238,7 @@ $$
 Поскольку 
 
 \begin{equation*}
-	C_{P}-C_{V}=-T \frac{(\partial V / \partial T)_{P}^{2}}{(\partial V / \partial P)_{T}},
+	C_{P}-C_{V}=-T \frac{(\frac{\partial V} {\partial T})_{P}^{2}}{(\frac{\partial V}{ \partial P})_{T}},
 \end{equation*}
 
 то из полученного неравенства следует, что всегда $C_{P}>C_{V} .$ Имея в виду также, что $C_{V}>0$, заключаем, что показатель адиабаты $\gamma=C_{P} / C_{V}>1 .$ Для положительной определенности квадратичной формы в (\ref{1.5.1}) можно было бы условие \textbf{а)} заменить условием $\left(\partial^{2} U / \partial V^{2}\right)_{S}>0$ или $\left(\partial^{2} U / \partial V^{2}\right)_{S}=-(\partial P / \partial V)_{S}>0 .$ Последнее означает, что адиабатическая сжимаемость также положительна:
@@ -298,7 +310,7 @@ Z=Y+P_{0} V=U-T_{0} S+P_{0} V,
 Приведем еще два, менее употребительные, условия термодинамической устойчивости. В них роль потенциалыных функций выполняют внутренняя энергия $U$ и энтальпия $I$.
 
 \textbf{3}. Перепишем неравенство Клаузиуса в виде
-\[S_2 - S_1 \geq \myint{\frac{dU + \delta A}{T}}\]
+\[S_2 - S_1 \geq \myint_{1\rightarrow 2}{\frac{dU + \delta A}{T}}\]
 Пусть энтропия и объем системы поддерживаются постоянными. Тогда $S_2 - S_1 = 0$ и $\delta A = PdV = 0$, поэтому предыдущее неравенство дает 
 \[\myint{\frac{dU}{T}} \leq 0\]
 Так как $T > 0$, то отсюда следует, что $dU \leq 0$. Если объем и
@@ -312,7 +324,7 @@ Z=Y+P_{0} V=U-T_{0} S+P_{0} V,
 
 \textbf{4}. Если давление и энтропия системы поддерживаются постоянными и система, в некотором равновесном состоянии достигла минимума энтальпии, то равновесие термодинамически устойчиво.
 Для доказательства этого положения следует переписать неравенство Клаузиуса в виде 
-\[S_2 - S_1 \geq \myint{\frac{dU - VdP}{T}}\]
+\[S_2 - S_1 \geq \myint_{1\rightarrow 2}{\frac{dU - VdP}{T}}\]
 и повторить предыдущие рассуждения.
 
 
