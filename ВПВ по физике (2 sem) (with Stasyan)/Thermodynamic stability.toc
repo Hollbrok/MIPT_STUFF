@@ -9,3 +9,5 @@
 \contentsline {section}{\numberline {3}Смысл условий устойчивости}{4}{section.3}%
 \contentsline {section}{\numberline {4}Общие критерии термодинамической устойчивости}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Критерий термодинамической устойчивости.}{5}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Неравенство Клаузиуса}{7}{section.5}%
+\contentsline {section}{\numberline {6}Литература}{9}{section.6}%
