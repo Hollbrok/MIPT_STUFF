@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.8)  5 JUN 2021 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.8)  5 JUN 2021 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,7 +656,7 @@ File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
 )
 
 LaTeX Warning: Unused global option(s):
-    [11.5pt].
+    [14pt].
 
 (./Thermodynamic stability.aux
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
@@ -752,34 +752,81 @@ been already used, duplicate ignored
                    \relax 
 l.94 \newpage
               [1]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 103
+.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 103
+.
+
+(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 10
+3.
+
+(c:/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+Overfull \hbox (1.11646pt too wide) in paragraph at lines 117--118
+[]\T2A/cmr/m/n/10 Рассматривая дав-ле-ние как функ-цию объ-е-ма и тем-пе-ра-ту-
+ры $\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 V; T\OT1/cmr/m/n/10 )$
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157 \end{equation*}
+                      [1]
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 168.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 168.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./Thermodynamic stability.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `"Thermodynamic stability".out' has not chang
 ed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
+(rerunfilecheck)             Checksum: 33B25AB2FB238187C4141E6C4BFBC68B;497.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 14814 strings out of 480876
- 211581 string characters out of 5911488
- 478725 words of memory out of 5000000
- 30252 multiletter control sequences out of 15000+600000
- 539236 words of font info for 35 fonts, out of 8000000 for 9000
+ 14903 strings out of 480876
+ 212824 string characters out of 5911488
+ 488763 words of memory out of 5000000
+ 30304 multiletter control sequences out of 15000+600000
+ 546998 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,45p,259b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,45p,856b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<c:/tex
-live/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/
-texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2020/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
-cm-super/sfrm1440.pfb>
-Output written on "Thermodynamic stability.pdf" (2 pages, 59906 bytes).
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmib10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cmextra/cmmib7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
+live/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2020/
+texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1000.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
+cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/s
+frm1440.pfb>
+Output written on "Thermodynamic stability.pdf" (4 pages, 170668 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

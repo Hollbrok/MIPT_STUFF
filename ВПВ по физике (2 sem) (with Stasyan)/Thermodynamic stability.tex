@@ -1,4 +1,4 @@
-\documentclass[a4paper,11.5pt]{article} % тип документа
+\documentclass[a4paper,14pt]{article} % тип документа
 
 
 %%%Библиотеки
@@ -97,5 +97,74 @@ urlcolor=blue
 
 
 %%%%%%Начало работы с текстом%%%%%%
+
+\section{Условие а)}
+
+\begin{equation*}
+\left(\frac{\partial^{2} U}{\partial S^{2}}\right)_{V}=\left(\frac{\partial T}{\partial S}\right)_{V}=\frac{T}{C_{V}}>0, \quad \text { т. e. } \quad C_{V}>0
+\end{equation*}
+
+\section{Условие б)}
+
+\begin{equation}
+\begin{aligned}
+X=\left(\frac{\partial^{2} U}{\partial S^{2}}\right)_{V}\left(\frac{\partial^{2} U}{\partial V^{2}}\right)_{S} &-\left(\frac{\partial}{\partial V}\left(\frac{\partial U}{\partial S}\right)_{V}\right)\left(\frac{\partial}{\partial S}\left(\frac{\partial U}{\partial V}\right)_{S}\right)=\\
+&=-\left(\frac{\partial T}{\partial S}\right)_{V}\left(\frac{\partial P}{\partial V}\right)_{S}+\left(\frac{\partial T}{\partial V}\right)_{S}\left(\frac{\partial P}{\partial S}\right)_{V}>0 .
+\end{aligned}
+\label{1for}
+\end{equation}
+
+Рассматривая давление как функцию объема и температуры $P=P(V, T)$ имеем $d P=(\partial P / \partial V)_{T}dV + \left(\partial P / \partial T)_{V} d T\right.$, откуда
+
+\begin{equation*}
+\left(\frac{\partial P}{\partial V}\right)_{S}=\left(\frac{\partial P}{\partial V}\right)_{T}+\left(\frac{\partial P}{\partial T}\right)_{V}\left(\frac{\partial T}{\partial V}\right)_{S}.
+\end{equation*}
+
+Подстановка последнего равенства в (\ref{1for}) дает
+
+\begin{equation*}
+\begin{aligned}
+&X=-\left(\frac{\partial T}{\partial S}\right)_{V}\left[\left(\frac{\partial P}{\partial V}\right)_{T}+\left(\frac{\partial P}{\partial T}\right)_{V}\left(\frac{\partial T}{\partial V}\right)_{S}\right]+ \\
+&\ \ \ \ \ \ \ \quad+\left(\frac{\partial T}{\partial V}\right)_{S}\left(\frac{\partial P}{\partial S}\right)_{V}=-\left(\frac{\partial T}{\partial S}\right)_{V}\left(\frac{\partial P}{\partial V}\right)_{T}- \\
+&\ \ \ \ \ \ \ \ \ \ \ \ \ -\left(\frac{\partial T}{\partial S}\right)_{V}\left(\frac{\partial P}{\partial T}\right)_{V}\left(\frac{\partial T}{\partial V}\right)_{S}+\left(\frac{\partial T}{\partial V}\right)_{S}\left(\frac{\partial P}{\partial S}\right)_{V} .
+\end{aligned}
+\end{equation*}
+
+Имея в виду, что
+$$
+\left(\frac{\partial T}{\partial S}\right)_{V}=\frac{T}{C_{V}}, \quad\left(\frac{\partial T}{\partial S}\right)_{V}\left(\frac{\partial P}{\partial T}\right)_{V}=\left(\frac{\partial P}{\partial S}\right)_{V},
+$$
+получим
+$$
+X=-\frac{T}{C_{V}}\left(\frac{\partial P}{\partial V}\right)_{T}>0 .
+$$
+Вследствие неравенства $C_{V}>0$ получаем, что $(\partial P / \partial V)_{T}<0 .$ Таким образом, независимо от уравнения состояния вещества изотермическая сжимаемость
+
+\begin{equation*}
+\beta_{T}=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{T}>0.
+\end{equation*}
+
+Поскольку 
+
+\begin{equation*}
+C_{P}-C_{V}=-T \frac{(\partial V / \partial T)_{P}^{2}}{(\partial V / \partial P)_{T}},
+\end{equation*}
+
+то из полученного неравенства следует, что всегда $C_{P}>C_{V} .$ Имея в виду также, что $C_{V}>0$, заключаем, что показатель адиабаты $\gamma=C_{P} / C_{V}>1 .$ Для положительной определенности квадратичной формы в (1.5.1\textbf{(СДЕЛАТЬ ССЫЛКУ НА ФОРМУЛУ СТАСИКА)}) можно было бы условие \textbf{а)} заменить условием $\left(\partial^{2} U / \partial V^{2}\right)_{S}>0$ или $\left(\partial^{2} U / \partial V^{2}\right)_{S}=-(\partial P / \partial V)_{S}>0 .$ Последнее означает, что адиабатическая сжимаемость также положительна:
+
+\begin{equation*}
+\beta_{T}=-\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_{T}>0.
+\end{equation*}
+
+Условия термодинамической устойчивости $C_V > 0$ и $\beta_{T} > 0$ называют 
+термодинамическими неравенствами.
+
+\section{Смысл условий устойчивости}
+
+\hskip 5mm Предположим, что подсистема находится в тепловом и механическом равновесии с внешней средой, т. е. $T=T_{0},\ P=P_{0} .$ Покажем, что при нарушении найденных условий состояние равновесия не может быть устойчивым.
+
+1) Допустим, что $C_{V}<0 .$ Пусть температура подсистемы случайно уменышилась, $T<T_{0} .$ Тогда в соответствии со вторым началом термодинамики в эту подсистему потечет тепловой поток из внешней среды. Поскольку $\delta Q=C_{V} d T>0$, то в результате температура $T$ еще более уменьшится. Аналогично, случайное увеличение температуры подсистемы приведет к ее дальнейшему увеличению. Следовательно, тепловое равновесие неустойчиво.
+
+2) Допустим, что $(\partial \boldsymbol{P} / \partial \boldsymbol{V})_{\boldsymbol{T}}>\mathbf{0 .}$ Пусть объем подсистемы случайно уменьшился. Тогда давление в ней также уменьшилось, $P<P_{0} .$ В результате внешнее давление $P_{0}$ оказывается больше, чем внутреннее. Поэтому объем подсистемы будет и дальше уменьшаться. Аналогично, при случайном увеличении объема подсистемы ее объем будет продолжать увеличиваться. Следовательно, механическое равновесие оказывается неустойчивым.
 
 \end{document}
