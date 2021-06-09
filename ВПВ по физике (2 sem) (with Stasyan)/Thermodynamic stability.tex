@@ -36,7 +36,11 @@
 %%% DRAGON STUFF
 \usepackage{scalerel}
 \usepackage{mathtools}
+
 \DeclareMathOperator*{\myint}{\ThisStyle{\rotatebox{25}{$\SavedStyle\!\int\!\!\!$}}}
+
+\DeclareMathOperator*{\myoint}{\ThisStyle{\rotatebox{25}{$\SavedStyle\!\oint\!\!\!$}}}
+
 \usepackage{scalerel}
 \usepackage{graphicx}
 %%% END 
@@ -361,18 +365,18 @@ Z=Y+P_{0} V=U-T_{0} S+P_{0} V,
 Переходя к пределу бесконечно большого числа промежуточных резервуаров, обменивающихся бесконечно малыми порциями тепла с системой $A$ и резервуаром $T_0$, приходим к неравенству Клаузиуса в интегральной форме:
 
 \begin{equation*}
-\oint \frac{\delta Q^{\swarrow}}{T} \leqslant 0
+\myoint \frac{\delta Q^{\swarrow}}{T} \leqslant 0
 \end{equation*}
 
 Здесь величина $T$ есть температура термостата, с которым в данный
 момент система обменивается теплом.
 
 Пусть в системе $A$ протекают только обратимые процессы. Тогда процесс можно провести в обратном направлении через те же промежуточные состояния, что и прямой, изменив лишь знак поступающей в систему теплоты и совершаемой работы. Применяя неравенство Клаузиуса
-для этого случая $\oint \frac{\delta Q^{\swarrow}}{T} \leqslant 0$ с учетом замены $\delta^{\prime} Q^{\swarrow}= - \delta Q^{\swarrow}$ , находим $\oint \frac{\delta Q^{\swarrow}}{T} \geqslant 0$. Совместно с неравенством Клаузиуса в исходной форме это
+для этого случая $\myoint \frac{\delta Q^{\swarrow}}{T} \leqslant 0$ с учетом замены $\delta^{\prime} Q^{\swarrow}= - \delta Q^{\swarrow}$ , находим $\myoint \frac{\delta Q^{\swarrow}}{T} \geqslant 0$. Совместно с неравенством Клаузиуса в исходной форме это
 дает равенство Клаузиуса:
 
 \begin{equation*}
-\oint \frac{\delta Q^{\swarrow}}{T}=0
+\myoint \frac{\delta Q^{\swarrow}}{T}=0
 \end{equation*}
 
 \section{Литература}
