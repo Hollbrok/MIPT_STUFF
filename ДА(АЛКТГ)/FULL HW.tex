@@ -1,0 +1,800 @@
+\documentclass[a4paper,14pt]{article} % тип документа
+%\documentclass[14pt]{extreport}
+\usepackage{extsizes} % Возможность сделать 14-й шрифт
+
+
+\usepackage{geometry} % Простой способ задавать поля
+\geometry{top=25mm}
+\geometry{bottom=35mm}
+\geometry{left=20mm}
+\geometry{right=20mm}
+
+\setcounter{section}{0}
+
+%%%Библиотеки
+%\usepackage[warn]{mathtext}
+%\usepackage[T2A]{fontenc} % кодировка
+\usepackage[utf8]{inputenc} % кодировка исходного текста
+\usepackage[english,russian]{babel} % локализация и переносы
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+\usepackage{wasysym}
+\usepackage{graphicx}%Вставка картинок правильная
+\usepackage{float}%"Плавающие" картинки
+\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+\usepackage{fancyhdr} %загрузим пакет
+\usepackage{lscape}
+\usepackage{xcolor}
+%\usepackage{indentfirst}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+
+
+
+
+%%% DRAGON STUFF
+\usepackage{scalerel}
+\usepackage{mathtools}
+
+\DeclareMathOperator*{\myint}{\ThisStyle{\rotatebox{25}{$\SavedStyle\!\int\!\!\!$}}}
+
+\DeclareMathOperator*{\myoint}{\ThisStyle{\rotatebox{25}{$\SavedStyle\!\oint\!\!\!$}}}
+
+\usepackage{scalerel}
+\usepackage{graphicx}
+%%% END 
+
+%%%Конец библиотек
+
+
+
+
+%%%Настройка ссылок
+\hypersetup
+{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue
+}
+%%%Конец настройки ссылок
+
+
+%%%Настройка колонтитулы
+	\pagestyle{fancy}
+	\fancyhead{}
+	\fancyhead[L]{Вопрос по выбору}
+	\fancyhead[R]{Талашкевич Даниил, группа Б01-009}
+	\fancyfoot[C]{\thepage}
+%%%конец настройки колонтитулы
+
+
+
+\begin{document}
+%%%%Начало документа%%%%
+
+
+%%%Начало титульника
+\begin{titlepage}
+
+	\newpage
+	\begin{center}
+		\normalsize Московский физико-технический институт \\(госудраственный 			университет)
+	\end{center}
+
+	\vspace{6em}
+
+	\begin{center}
+		\Large Устный экзамен по физике (термодинамика)\\Вопрос по выбору
+	\end{center}
+
+	\vspace{1em}
+
+	\begin{center}
+		\large \textbf{Термодинамическая устойчивость}
+	\end{center}
+
+	\vspace{2em}
+
+	\begin{center}
+		\large Талашкевич Даниил\\
+		Группа Б01-009
+	\end{center}
+
+	\vspace{\fill}
+
+	\begin{center}
+	Долгопрудный \\2021
+	\end{center}
+	
+\end{titlepage}
+%%%Конец Титульника
+
+
+
+%%%Настройка оглавления и нумерации страниц
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+%%%Настройка оглавления и нумерации страниц
+
+
+%%%%%%Начало работы с текстом%%%%%%
+
+\section{Алгебра логики}
+
+\subsection{Задача 1}
+
+Согласно условию задачи,
+\[ \neg{(x=y)} \land((y<x) \to (2z>x)) \land((x<y) \to (x>2z)) =1\]
+Так как это выражение - истина, тогда истине равны:
+
+$a)$ $\neg{(x=y)}=1$ 
+
+$b)$ $(y<x) \to (2z>x)=1$
+
+$c)$ $(x<y) \to (x>2z)=1$ \\
+
+Из пункта а) следует, что $x \neq y$, то есть $x \neq 16$.
+
+Пункт б) выполняется всегда, кроме случая:
+
+\[\begin{cases}
+  (y < x) = 1\\
+  (2z>x)=0
+\end{cases}\] 
+\[\begin{cases}
+  x>y\\
+  x\geqslant 2z
+\end{cases}\]
+ \[\begin{cases}
+  x>16\\
+  x\geqslant 14
+\end{cases}\]
+\[ x>16\]
+То есть пункт б) выполняется, если
+\[ x\leqslant15\]
+Пункт в) отличается от б) только знаками неравенств:
+\[ x\geqslant15\]
+В итоге получили систему уравнений:
+\[\begin{cases}
+  x\geqslant15\\
+  x\leqslant15\\
+  x \neq 16
+\end{cases}\]
+\[x = 15\]
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: 15}
+\end{large}
+\end{flushright}
+
+\newpage
+
+\begin{center}
+\subsection{Задача 2}
+\end{center}
+\[f(x,y,z)=\neg{((x \wedge \neg y)\wedge z)}\]
+Найдём все значения функции для построения таблицы истинности:
+\[f(0,0,0)=\neg{((0 \wedge \neg 0)\wedge 0)}=\neg{(0\wedge 0)}=1\]
+\[f(0,0,1)=\neg{((0 \wedge \neg 0)\wedge 1)}=\neg{(0\wedge 1)}=1\]
+\[f(0,1,0)=\neg{((0 \wedge \neg 1)\wedge 0)}=\neg{(0\wedge 0)}=1\]
+\[f(0,1,1)=\neg{((0 \wedge \neg 1)\wedge 1)}=\neg{(0\wedge 1)}=1\]
+\[f(1,0,0)=\neg{((1 \wedge \neg 0)\wedge 0)}=\neg{(1\wedge 0)}=1\]
+\[f(1,0,1)=\neg{((1 \wedge \neg 0)\wedge 1)}=\neg{(1\wedge 1)}=0\]
+\[f(1,1,0)=\neg{((1 \wedge \neg 1)\wedge 0)}=\neg{(0\wedge 0)}=1\]
+\[f(1,1,1)=\neg{((1 \wedge \neg 1)\wedge 1)}=\neg{(1\wedge 0)}=1\]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x$ & $y$ & $z$ & $f(x,y,z)$ \\
+\hline
+0 & 0 & 0 & 1 \\
+\hline
+0 & 0 & 1 & 1 \\
+\hline
+0 & 1 & 0 & 1 \\
+\hline
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 1 \\
+\hline
+1 & 0 & 1 & 0 \\
+\hline
+1 & 1 & 0 & 1 \\
+\hline
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\subsection{Задача 3}
+\end{center}
+\[1\oplus x_1 \oplus x_2 = (x_1\rightarrow x_2) \wedge (x_2\rightarrow x_1) \]
+Для доказательства рассмотрим, когда (в каких случаях) оба выражения равны истине:\\
+
+$1)$ $f_1(x_1, x_2)= (1\oplus x_1) \oplus x_2 =1$
+
+$ a)$ если $x_1=0,$ то $x_2=0,$
+
+$ b)$ если $x_1=1,$ то $x_2=1,$
+То есть $x_1 = x_2,$ если $f_1(x_1, x_2)=1$ \\
+
+$2)$ $f_2(x_1, x_2)= (x_1\rightarrow x_2) \wedge (x_2\rightarrow x_1)=1$
+
+Заметим, что $x_1 = x_2 =0$ или $x_1 = x_2 =1$, иначе возникает ситуация $1\rightarrow 0 = 0$, то есть $x_1 = x_2,$ если $f_2(x_1, x_2)=1$ \\
+
+Оба выражения равны истине только тогда, когда $x_1 = x_2$, в остальных случаях $(x_1 \neq x_2)$ они равны нулю (лжи), то есть булевы функции $f_1(x_1, x_2)$ и $f_2(x_1, x_2)$ ведут себя одинаково при различных $x_1$ и $x_2$, значит они эквивалентны.
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+
+\begin{center}
+\subsection{Задача 4}
+\end{center}
+
+
+$a)$ $x\wedge (y\rightarrow z) =(x\wedge y)\rightarrow(x\wedge z)$\\
+
+Пусть $x=0$, тогда выражение слева в $a)$ всегда равно нулю \[(0\wedge (y\rightarrow z))=0\]
+
+Значит \[(x\wedge y)\rightarrow(x\wedge z)=0\]
+
+\[\begin{cases}
+  x\wedge y = 1\\
+  x\wedge z = 0
+\end{cases}\]
+\[x=y=1\]
+Получили, что $x=1$, предполагая, что $x=0$.
+ \underline{Противоречие. Дистрибутивность не выполянется.}\\
+ $b)$ $x\oplus (y \leftrightarrow z) = (x\oplus y)\leftrightarrow (x\oplus z)$ \\
+
+Предположим, что выражение слева $(x\oplus (y \leftrightarrow z))$ равно истине, тогда:
+\begin{equation}x\oplus (y \leftrightarrow z)=1
+\end{equation}
+\begin{equation}(x\oplus y)\leftrightarrow (x\oplus z)=1
+\end{equation}
+
+Рассмотрим решение уравнения $(1)$: случай 1:
+\[\begin{cases}
+  x\oplus y = 1\\
+  x\oplus z = 1
+\end{cases}\]
+\[y=z\neq x\]
+Рассмотрим случай 2:
+\[\begin{cases}
+  x\oplus y = 0\\
+  x\oplus z = 0
+\end{cases}\]
+\[y=z = x\]
+В любом случае в решении $(x\oplus y)\leftrightarrow (x\oplus z)=1$ выполняется $y=z$.
+  
+Решением уравнения $(2)$ являются 2 системы:
+ \begin{equation}\begin{cases}
+  x = 0\\
+  y =z
+\end{cases} \end{equation}
+ \begin{equation}\begin{cases}
+  x = 1\\
+  y \neq z
+\end{cases} \end{equation}
+ То есть одно из решений содержит $y \neq z$, но в решении уравнения $(1)$ всегда $y=z$.
+\underline{Противоречие. Дистрибутивность не выполянется.}
+\newpage
+\begin{center}
+\subsection{Задача 5}
+\end{center}
+
+$a)$ \underline{Коммутативность для импликации} $x\rightarrow y =y\rightarrow x$ \underline{не выполняется}, так как если $x=0, y=1$, то $0\rightarrow 1=1$, но $1\rightarrow 0=0$ \\
+
+$b)$ \underline{Ассоциативность} $(x\rightarrow y)\rightarrow z = x\rightarrow (y\rightarrow z) $ \underline{не выполняется}, так как при если $x=0$, то $x\rightarrow (y\rightarrow z)=1$ при любых $y$ и $z$, при этом $x\rightarrow y=1$, но если $z=0$, то $(x\rightarrow y)\rightarrow z =0$, в то время как $x\rightarrow (y\rightarrow z)=1$ \\
+
+\subsection{Задача 6}
+
+$a)$ $f(x_1,x_2,x_3)=00111100$
+
+Для наглядности составим  таблицу истинности:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_3$ & $f(x_1,x_2,x_3)$ \\
+\hline
+0 & 0 & 0 & 0 \\
+\hline
+0 & 0 & 1 & 0 \\
+\hline
+0 & 1 & 0 & 1 \\
+\hline
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 1 \\
+\hline
+1 & 0 & 1 & 1 \\
+\hline
+1 & 1 & 0 & 0 \\
+\hline
+1 & 1 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+Заметим, что при $x_1=x_2$ выходит $f(x_1,x_2,x_3)=0$, а в других случаях $f(x_1,x_2,x_3)=1$, значит \underline{$x_1$ и $x_2$ - существенные переменные, а $x_3$ - фиктивная.} \\
+
+$b)$ $g(x_1,x_2,x_3)=(x_1\rightarrow (x_1\vee x_2))\rightarrow x_3$
+
+Если $x_1=1$, то $(x_1\rightarrow (x_1\vee x_2))=(1\rightarrow 1)=1$.
+
+Если $x_1=0$, то $(x_1\rightarrow (x_1\vee x_2))=(0\rightarrow (0\vee x_2))=1$.
+
+Получили, что $(x_1\rightarrow (x_1\vee x_2))=1$ не зависит от $x_1$ и тем более от $x_2$, значит $g(x_1,x_2,x_3)=1\rightarrow x_3$.
+Итак, \underline{$x_1$ и $x_2$ - фиктивные переменные, а $x_3$ - существенная переменная.}
+
+\newpage
+\begin{center}
+\subsection{Задача 7}
+\end{center}
+\[f(x_1,...,x_n)=(x_1\vee f(0,x_2,...,x_n))\wedge (\neg x_1 \vee f(1,x_2,...,x_n))\]
+
+$1)$ Пусть $f(0,x_2,...,x_n)=0$, тогда:
+\[f(0,x_2,...,x_n)=(0\vee f(0,x_2,...,x_n))\wedge (1 \vee f(1,x_2,...,x_n))=0\wedge 1 =0\]
+Выражение выполняется.
+
+$2)$ Пусть $f(0,x_2,...,x_n)=1$, тогда:
+\[f(0,x_2,...,x_n)=(0\vee f(0,x_2,...,x_n))\wedge (1 \vee f(1,x_2,...,x_n))=1\wedge 1 =1\]
+Выражение выполняется.
+
+$3)$ Пусть $f(1,x_2,...,x_n)=0$, тогда:
+\[f(1,x_2,...,x_n)=(1\vee f(0,x_2,...,x_n))\wedge (0 \vee f(1,x_2,...,x_n))=1\wedge 0 =0\]
+Выражение выполняется.
+
+$4)$ Пусть $f(1,x_2,...,x_n)=1$, тогда:
+\[f(0,x_2,...,x_n)=(1\vee f(0,x_2,...,x_n))\wedge (0 \vee f(1,x_2,...,x_n))=1\wedge 1 =1\]
+
+Выражение выполняется.
+
+Итак, исходное равенство выполняется для любых функций с любыми значениями $x_1$. Интересно также отметить, что равенство выполняется для любого аргумента $x_i$ $(0\leqslant i\leqslant n)$, так как аргументы являются независимыми.
+
+\newpage
+\begin{center}
+\subsection{Задача 8}
+\end{center}
+\[x_1^{\alpha_1}\wedge x_2^{\alpha_2} \wedge ... \wedge x_n^{\alpha_n}=1\]
+
+Равенство возможно только в одном случае: $x_i^{\alpha_i}=1$ $(1\leqslant i\leqslant n)$. Значение $x_i^{\alpha_i}$ зависит от $x_i$ и $\alpha_i$: если $x_i=0$, то $\alpha_i=0$, чтобы $x_i^{\alpha_i}=1$ и если $x_i=1$, то $\alpha_i=1$, чтобы $x_i^{\alpha_i}=1$. Определённому значению $x_i$ соответсвует определённое $\alpha_i$, значит если выбран определённый набор $x_1,...,x_n$, ему будет соответствовать единственный набор $\alpha_1,...,\alpha_n$ \\\\
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+
+\begin{center}
+\subsection{Задача 9}
+\end{center}
+\[\bigvee \limits_{i, j} (x_i\oplus x_j)=(x_1\vee x_2 \vee ... \vee x_n)\wedge (\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n}) \]
+$1)$ $\bigvee \limits_{i, j} (x_i\oplus x_j)=1$, если хотя бы одна комбинация $x_i$ и $x_j$ отличается по значениям. В этом же случае $(x_1\vee x_2 \vee ... \vee x_n)=1$, так как среди $x_i$ будет по крайней мере одна единица, и $(\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})= 1$, так как по крайней мере найдётся одно значение $x_i=0$, а значит $\overline{x_i}=1$. Значит
+\[\bigvee \limits_{i, j} (x_i\oplus x_j)=(x_1\vee x_2 \vee ... \vee x_n)\wedge (\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})=1 \]
+
+Получается, что равенство в условии выполняется.\\
+$2)$ $\bigvee \limits_{i, j} (x_i\oplus x_j)=0$, если все значения $x_i$ равны (0 или 1), значит либо $(x_1\vee x_2 \vee ... \vee x_n)=0$, либо $(\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})= 0$, тогда
+\[\bigvee \limits_{i, j} (x_i\oplus x_j)=(x_1\vee x_2 \vee ... \vee x_n)\wedge (\overline{x_1} \vee \overline{x_2} \vee ... \vee \overline{x_n})=0 \]
+
+Равенство в условии снова выполняется, значит оно справедливо для любых значений $x_i$.
+
+\newpage
+\begin{center}
+\subsection{Задача 10}
+\end{center}
+\par
+Пусть булева функция выражается только через связки $\vee$ и $\wedge$. Заметим, что эти связки могут только либо сохранять предыдущие значения выражений (переменных), либо увеличивать их до 1, значит функции, использующие только эти связки - нестрого возрастающие. Получается, что нестрого или строго убывающую функцию эти связки описать не могут (перевести 1 в 0), для этого как минимум требуется использовать связку $\neg$.
+Значит существует убывающая функция, которая не может быть описана только связками $\vee$ и $\wedge$.
+
+\section{Множества и логика}
+
+\subsection{Задача 1}
+
+ Верно ли, что для любых множеств A и B выполняется равенство:
+
+\[(A\setminus B)\cap ((A\cup B)\setminus (A\cap B)) = A\setminus B\  ? \]
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+\[(A\setminus B)\cap ((A\cup B)\setminus (A\cap B))= A\setminus B\]
+
+Обозначим $X=A\setminus B$, пусть $x\in X$, тогда $x\in A\cap \overline{B}$, значит можно переписать равенство в условии так:
+\[(A\cap \overline{B})\cap ((A\cup B)\cap \overline{(A\cap B)})= A\cap \overline{B}\]
+
+$A\cup B$ - объединение множеств, а $A\cap B$ - пересечение, тогда понятно, что множество $(A\cup B)\cap \overline{(A\cap B)}$ можно заменить на $A\bigtriangleup B$, тогда условие переписывается в виде:
+\[(A\cap \overline{B})\cap (A\bigtriangleup B)= A\cap \overline{B}\]
+
+По определению операции "симметричное или"
+\[A\bigtriangleup B = (A\cap \overline{B})\cup (B\cap \overline{A})\]
+
+Значит $(A\cap \overline{B})\subseteq (A\bigtriangleup B)$ и справедливо
+\[(A\cap \overline{B})\cap (A\bigtriangleup B)= A\cap \overline{B}\]
+
+Это выражение эквивалентно исходному, значит и исходное равенство верно.
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: верно}
+\end{large}
+\end{flushright}
+
+\newpage
+\begin{center}
+\subsection{Задача 2}
+\end{center}
+
+Верно ли, что для любых множеств A, B и C выполняется равенство: $((A \setminus B) \cup (A \setminus C)) \cap (A \setminus (B \cup C)) = A \setminus (B \cup C) $ ?
+
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\[((A\setminus B) \cup (A\setminus C)) \cap (A\setminus(B\cap C))=A\setminus (B\cup C)\]
+
+Для удобства перепишем равенство, пользуясь тем, что $A\setminus B = A\cap \overline{B}$:
+\[((A\cap \overline{B}) \cup (A\cap \overline{C})) \cap (A\cap \overline{(B\cap C)})=A \cap \overline{(B\cup C)}\]
+
+Воспользуемся формулой дистрибутивности и законом де Моргана:
+\[(A\cap \overline{B}) \cup (A\cap \overline{C})= A\cap (\overline{B} \cup \overline{C}) = A\cap \overline{(B \cap C)}\]
+
+Равенство в условии принимает вид:
+\[(A\cap \overline{(B \cap C)})\cap (A\cap \overline{(B\cap C)})=A \cap \overline{(B\cup C)}\]
+
+Очевидно, что
+\[(A\cap \overline{(B \cap C)})\cap (A\cap \overline{(B\cap C)}) = (A\cap \overline{(B\cap C)})\]
+
+Тогда равенство принимает вид:
+\[A\cap \overline{(B\cap C)} = A \cap \overline{(B\cup C)}\]
+\[A\cap (\overline{B} \cup \overline{C}) = A \cap (\overline{B} \cap \overline{C})\]
+
+
+Понятно, что это равенство неверно.
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: неверно}
+\end{large}
+\end{flushright}
+
+\newpage
+\begin{center}
+\subsection{Задача 3}
+\end{center}
+
+Верно ли, что для любых множеств A, B и C выполняется равенство: $(A \cap B) \setminus C = (A \setminus C) \cap (B \setminus C)?$
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+\[(A\cap B)\setminus C = (A\setminus C) \cap (B\setminus C)\]
+
+Преобразуем равенство так же, как и в первых двух задача:
+\[(A\cap B)\cap \overline{C} = (A\cap \overline{C}) \cap (B\cap \overline{C})\]
+
+
+В записанном равенстве используются только операции пересечения $\cap$, а они ассоциативны:
+\[A\cap B\cap \overline{C} = A\cap \overline{C} \cap B\cap \overline{C} \]
+\[A\cap B\cap \overline{C} = A\cap \overline{C} \cap B \]
+\[A\cap B\cap \overline{C} = A\cap B \cap \overline{C} \]
+
+Получили верное равенство, значит равенство в условии верно.
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: верно}
+\end{large}
+\end{flushright}
+
+\newpage
+\begin{center}
+\subsection{Задача 4}
+\end{center}
+
+Верно ли, что для любых множеств A и B выполняется включение $(A \cup B) \setminus (A \setminus B) \subseteq B$?
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+\[(A \cup B) \setminus (A \setminus B) \subseteq B\]
+
+Для анализа этого включения немного его преобразуем:
+\[(A \cup B) \cap \overline{(A \cap \overline{B})} \subseteq B\]
+\[\overline{(A \cap \overline{B})} \cap (A \cup B)  \subseteq B\]
+
+Очевидно, что $(A \cap \overline{B}) \subseteq A$ и $(A \cap \overline{B}) \cap B =0$. Значит $B\subseteq\overline{(A \cap \overline{B})}$, при этом $\overline{(A \cap \overline{B})} \cap A = B \cap A$ и $\overline{(A \cap \overline{B})} \cap B = B $. Применим дистрибутивность:
+\[\overline{(A \cap \overline{B})} \cap (A \cup B)  \subseteq B\]
+\[(\overline{(A \cap \overline{B})} \cap A) \cup (\overline{(A \cap \overline{B})} \cap B)  \subseteq B\]
+
+Теперь подставим записанные ранее выражения:
+\[(B \cap A) \cup B  \subseteq B\]
+
+Очевидно, что $B\subseteq B$ и $(B \cap A)\subseteq B$, тогда верно и
+\[(B \cap A) \cup B  \subseteq B\]
+
+Это включение было получено из включения в условии, значит и включение в условии верно.
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: верно}
+\end{large}
+\end{flushright}
+
+\newpage
+\begin{center}
+\subsection{Задача 5}
+\end{center}
+
+Пусть P = [10, 40]; Q = [20, 30]; известно, что отрезок A удовлетворяет соотношению
+
+\[((x \in A) \rightarrow (x \in P)) \wedge ((x \in Q) \rightarrow (x \in A)).\]
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\[((x\in A) \rightarrow (x\in P)) \wedge ((x\in Q) \rightarrow (x\in A))=1\]
+
+Из равенства следует, что:
+
+ \[\begin{cases}
+  (x\in A) \rightarrow (x\in P) = 1\\
+  (x\in Q) \rightarrow (x\in A) = 1
+\end{cases}\]
+Первое равенство выполняется всегда, кроме случая:
+ \[\begin{cases}
+  (x\in A) = 1\\
+  (x\in P) = 0
+\end{cases}\]
+ \[\begin{cases}
+  x\in A\\
+  x \notin [10,40]
+\end{cases}\]
+Отсюда получаем:
+\[A\subseteq [10,40] \]
+Второе равенство выполняется всегда, кроме случая:
+\[\begin{cases}
+  (x\in Q) = 1\\
+  (x\in A) = 0
+\end{cases}\]
+ \[\begin{cases}
+  x\in [20,30]\\
+  x \notin A
+\end{cases}\]
+Отсюда получаем, что $A\subseteq [\alpha,\beta]$, где $\alpha \leqslant 20$, а $\beta \geqslant 30$
+Запишем два полученных условия:
+ \[\begin{cases}
+  A\subseteq [\alpha,\beta]$, где $\alpha \leqslant 20$, а $\beta \geqslant 30\\
+  A\subseteq [10,40]
+\end{cases}\]
+Значит $A\subseteq [\alpha,\beta]$, где $\alpha \in [10,20]$, а $\beta \in [30,40]$
+Минимально возможный отрезок $A$ равен 10, максимальный - 30.
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: 1) 30, 2) 10}
+\end{large}
+\end{flushright}
+
+
+\newpage
+\begin{center}
+\subsection{Задача 6}
+\end{center}
+
+Про множества A, B, X, Y известно, что $A \cap X = B \cap X, A \cup Y = B \cup Y .$ Верно ли, что тогда выполняется равенство $A \cup (Y \setminus X) = B \cup (Y \setminus X)$?
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+По условию $A\cap X = B\cap X, A\cup Y = B\cup Y$. Предположим, что справедливо
+\[A \cup (Y \setminus X) = B \cup (Y \setminus X)\]
+
+Преобразуем равенство следующим образом:
+\[A \cup (Y \cap \overline{X}) = B \cup (Y \cap \overline{X})\]
+\[(A \cup Y) \cap (A \cup \overline{X}) = (B \cup Y) \cap (B \cup \overline{X})\]
+
+По условию, как уже было записано, $A\cup Y = B\cup Y$, значит
+\[(A \cup Y) \cap (A \cup \overline{X}) = (A \cup Y) \cap (B \cup \overline{X})\]
+
+Возьмём дополнение обоих частей равенства, используя закон де Моргана:
+\[\overline{(A \cup Y)} \cup (X \cap \overline{A}) = \overline{(A \cup Y)} \cup (X \cap \overline{B})\]
+
+Сделаем маленькое преобразование:
+\[(X \cap \overline{A}) = (X \cap \overline{A})\cup \varnothing = (X \cap \overline{A})\cup (X \cap \overline{X}) = X \cap (\overline{A} \cup \overline{X}) = X \cap \overline{(A \cap X)} = X\setminus (A \cap X)\]
+
+Тогда
+\[\overline{(A \cup Y)} \cup (X\setminus (A \cap X)) = \overline{(A \cup Y)} \cup (X\setminus (B \cap X))\]
+
+По условию $A\cap X = B\cap X$, значит равенство выполняется.
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: верно}
+\end{large}
+\end{flushright}
+
+\newpage
+\begin{center}
+\subsection{Задача 7}
+\end{center}
+Пусть $A_{1} \supseteq A_{2} \supseteq A_{3} \supseteq \ldots \supseteq A_{n} \supseteq \ldots $ — невозрастающая последовательность множеств.
+Известно, что $A_{1} \setminus A_{4} = A_{6} \setminus A_{9}$. Докажите, что $A_{2} \setminus A_{7} = A_{3} \setminus A_{8}$.
+
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+\[A_1\supseteq A_2 \supseteq A_3 \supseteq ... \supseteq A_n \supseteq ...\]
+\[A_1 \setminus A_4 = A_6 \setminus A_9\]
+
+Очевидно, что $A_6 \setminus A_9 \subseteq A_6$, но тогда и $A_1 \setminus A_4 \subseteq A_6$, также по условию $A_6 \subseteq A_4$. Получается, что $A_1 \setminus A_4 \subseteq A_6 \subseteq A_4$, то есть $A_1 \setminus A_4  \subseteq A_4$, но по определению разности множеств $A_1 \setminus A_4  \nsubseteq A_4$ в общем случае. Противоречия не возникает только если $A_1 = A_4$, тогда $A_1 \setminus A_4 = \varnothing \subseteq A_4$.
+
+Описанная выше ситуация возможна только при $A_1 = A_2 = A_3 =  A_4$, а так как по условию $A_1 \setminus A_4 = A_6 \setminus A_9 = \varnothing$, то $A_6 = A_7 = A_8 = A_9$.
+
+Тогда получается, что $A_2 = A_3$ и $A_7 = A_8$ и $A_2 \setminus A_7 = A_3 \setminus A_8$. \\
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+
+
+\newpage
+\begin{center}
+\subsection{Задача 8}
+\end{center}
+
+Пусть A, B, C, D — такие отрезки прямой, что $A \bigtriangleup B = C \bigtriangleup D$ (симметрические разности равны). Верно ли, что выполняется включение $A \cap B \subseteq C$?
+\newpage
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+\[A\bigtriangleup B = C\bigtriangleup D\]
+
+Пусть $A = (\alpha_0, \alpha_1),B = (\beta_0, \beta_1) $, причём $\alpha_0 < \beta_0 < \beta_1 < \alpha_1 $, то есть $B\subseteq A$. Тогда $A \bigtriangleup B = A \setminus B = (\alpha_0, \beta_0)\cup (\beta_1, \alpha_1)$.
+
+Выберем такие $C$ и $D$, что $C =(\alpha_0, \beta_0), D = (\beta_1, \alpha_1)$ и $C \bigtriangleup D =(\alpha_0, \beta_0)\cup (\beta_1, \alpha_1) $. Тогда получим, что $A \bigtriangleup B = C \bigtriangleup D$, что и написано в условии.
+
+Но тогда $A\cap B = B = (\beta_0, \beta_1) $, а $C = (\alpha_0, \beta_0) $, то есть $(A\cap B)\cap C = \varnothing$, тогда тем более $(A\cap B)\subseteq C $.
+
+\begin{flushright}
+\begin{large}
+\textbf {Не верно}
+\end{large}
+\end{flushright}
+
+\begin{center}
+\subsection{Задача 9}
+\end{center}
+
+ Характеристической функцией множества А называется функция:
+
+\[ X_{A}: U \rightarrow \{0,1\} .\]\\
+такая, что
+
+\[ X_{A}(x) = \begin{cases}
+1 , x\in A,\\
+0 , x\notin A.\\ 
+\end{cases}\]\\
+Докажите, что
+
+а)$\chi_{A\cap B}(x) = \chi_{A}(x) \cdot \chi_{B}(x);$
+
+б)$\chi_{A\setminus B}(x) = \chi_{A}(x) - \chi_{A}(x) \cdot \chi_{B}(x);$
+
+в)$\chi_{A\cup B}(x) = \chi_A(x) + \chi_{B}(x) - \chi_{A}(x)\cdot \chi_{B} (x);$
+
+г)$\chi_{\overline{A}}(x) = 1 - \chi_{A}(x).$
+
+
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+Основываясь на том,что функции алгебры логик аналогичны с теоретико-множественными операторами, получим:\\
+a) $A \cap B = A \wedge B.$ Пользуясь условием получим, что\\
+\begin{tabular}{ | c | c | c | c |}
+\hline
+$A$ & $B$ & $A\wedge B$ & $A \cdot B$\\ \hline
+$0$ & $0$ & $0$ & $0$\\
+$0$ & $1$ & $0$ & $0$\\
+$1$ & $0$ & $0$ & $0$\\
+$1$ & $1$ & $1$ & $1$\\
+\hline 
+\end{tabular}\\
+Видно, что выполняется при всех (A,B)$ \Rightarrow \chi_{A\cap B}(x) = \chi_{A}(x) \cdot \chi_{B}(x)$. Доказано.\\
+б) $A \setminus B = A \cap \overline{B} = A \wedge \overline{B}$\\
+\begin{tabular}{ | c | c | c | c |}
+\hline
+$A$ & $B$ & $ A \wedge \overline{B}$ & $\chi_{A}(x) - \chi_{A}(x) \cdot \chi_{B}(x)$\\ \hline
+$0$ & $0$ & $0$ & $0$\\
+$0$ & $1$ & $0$ & $0$\\
+$1$ & $0$ & $1$ & $1$\\
+$1$ & $1$ & $0$ & $0$\\
+\hline 
+\end{tabular}\\
+Видно, что выполняется при всех (A,B)$ \Rightarrow \chi_{A\setminus B}(x) = \chi_{A}(x) - \chi_{A}(x) \cdot \chi_{B}(x).$Доказано.\\
+в) $A \cup B = A \vee B$\\
+\begin{tabular}{ | c | c | c | c |}
+\hline
+$A$ & $B$ & $A \vee B$ & $\chi_A(x) + \chi_{B}(x) - \chi_{A}(x)\cdot \chi_{B} (x)$\\ \hline
+$0$ & $0$ & $0$ & $0$\\
+$0$ & $1$ & $1$ & $1$\\
+$1$ & $0$ & $1$ & $1$\\
+$1$ & $1$ & $1$ & $1$\\
+\hline 
+\end{tabular}\\
+Видно, что выполняется при всех (A,B)$ \Rightarrow \chi_{A\cup B}(x) = \chi_A(x) + \chi_{B}(x) - \chi_{A}(x)\cdot \chi_{B} (x).$Доказано.\\
+г) $\overline{A}$\\
+\begin{tabular}{ | c | c | c |}
+\hline
+$A$ & $\overline{A}$ & $1 - \chi_{A}(x)$\\ \hline
+$0$ & $1$ & $1$\\
+$0$ & $1$ & $1$\\
+$1$ & $0$ & $0$\\
+$1$ & $0$ & $0$\\
+\hline 
+\end{tabular}\\
+Видно, что выполняется при всех (A,B)$ \Rightarrow \chi_{\overline{A}}(x) = 1 - \chi_{A}(x).$Доказано.
+
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: доказано.}
+\end{large}
+\end{flushright}
+
+\begin{center}
+\subsection{Задача 10}
+\end{center}
+
+Используя формализм счетного объединения, докажите, что в любом бесконечном множестве есть счетное подмножество.
+
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+
+Пусть множество {\bf B} бесконечно. Тогда оно содержит хотя бы один элемент $a_{1}$. В силу бесконечности B в нём найдется элемент $a_{2}$, отличный от $a_{1}$. Так как злементы $a_{2}$ и $a_{1}$ не исчерпывают всего множества {\bf B}, то в нём найдется элемент $a_{3}$, отличный и от $a_{2}$ и от $a_{1}$. Если уже выделено $n$ элементов $a_{1}, a_{2},\ \dots\ , a_{n}$, то в силу бесконечности {\bf B} в нём найдётся еще один элемент, который обозначим $a_{n+1}$, отличный от всех ранее выбранных элементов. Таким образом, для каждого натурального числа $n$ можно выделить элемент $a_{n}$ из {\bf B}, причём все выделенные элементы попарно различны. Выделенные элементы образуют последовательность $ a_{1}, a_{2},\dots a_{n} \dots $. Множество её членов по определению счётно, и это множество есть часть {\bf B}.
+
+
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: доказано.}
+\end{large}
+\end{flushright}
+
+
+\end{document}
