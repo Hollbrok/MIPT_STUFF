@@ -1,0 +1,100 @@
+\documentclass[a4paper, 12pt]{article}%тип документа
+
+%%%Библиотеки
+	%\usepackage[warn]{mathtext}	
+	\usepackage[T2A]{fontenc} % кодировка
+	\usepackage[utf8]{inputenc} % кодировка исходного текста
+	\usepackage[english,russian]{babel} % локализация и переносы
+	\usepackage{caption}
+	\usepackage{listings}
+	\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+	\usepackage{wasysym}
+	\usepackage{graphicx}%Вставка картинок правильная
+	\usepackage{float}%"Плавающие" картинки
+	\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+	\usepackage{fancyhdr} %загрузим пакет
+	\usepackage{lscape}
+	\usepackage{xcolor}
+	\usepackage[normalem]{ulem}
+	\usepackage{hyperref}
+
+%%%Конец библиотек
+
+
+
+
+%%%Настройка ссылок
+	\hypersetup
+	{
+		colorlinks=true,
+		linkcolor=blue,
+		filecolor=magenta,
+		urlcolor=blue
+	}
+%%%Конец настройки ссылок
+
+
+%%%Настройка колонтитулы
+	\pagestyle{fancy}
+	\fancyhead{}
+	\fancyhead[L]{Лабораторная работа}
+	\fancyhead[R]{Талашкевич Даниил, группа Б01-009}
+	\fancyfoot[C]{\thepage}
+%%%конец настройки колонтитулы
+
+
+
+							\begin{document}
+						%%%%Начало документа%%%%
+
+
+%%%Начало титульника
+\begin{titlepage}
+
+	\newpage
+	\begin{center}
+		\normalsize Московский физико-технический институт \\(госудраственный 			университет)
+	\end{center}
+
+	\vspace{6em}
+
+	\begin{center}
+		\Large Лабораторная работа по электричеству\\
+	\end{center}
+
+	\vspace{1em}
+
+	\begin{center}
+		\large \textbf{Свободные колебаний в электрическом контуре [3.2.4]}
+	\end{center}
+
+	\vspace{2em}
+
+	\begin{center}
+		\large Талашкевич Даниил Александрович\\
+		Группа Б01-009
+	\end{center}
+
+	\vspace{\fill}
+
+	\begin{center}
+	Долгопрудный \\2021
+	\end{center}
+	
+\end{titlepage}
+%%%Конец Титульника
+
+
+
+%%%Настройка оглавления и нумерации страниц
+	\thispagestyle{empty}
+	\newpage
+	\tableofcontents
+	\newpage
+	\setcounter{page}{1}
+%%%Настройка оглавления и нумерации страниц
+
+
+					%%%%%%Начало работы с текстом%%%%%%
+					
+\end{document}
