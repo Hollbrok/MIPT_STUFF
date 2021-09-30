@@ -201,12 +201,66 @@ $x,\text{ мм}$ & $C,\text{ мкФ}$ & $I,\ A$ & $U_C, B$ & $U_{\sum}\ B$ & $Q$
 \end{center} 
 \end{table}
 
+Для резонансного положения сердечника измерим омическое сопротивление витков каткушки с помощью мультиметра $GDM$, а затем -- $L$, $r_L$ с помощью измерителя $LCR$ на частотах 50 Гц и 1 кГц.
+
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline & Омметр & $LCR$ & График & Вект.диагр & $f\left(I, U_{\Sigma}\right)_{\text{рез}}$ & $f(Q)$ \\
+\hline \hline$r_{L}$ & 2170 & & & & & \\
+$L$ & $-$ & & & & $-$ & \\
+\hline
+\end{tabular}
+\caption{Данные с мультиметра $GDM$ и $LCR$ измерителя}
+\end{center} 
+\end{table}
+
 
 \section{Обработка результатов}
 
 \begin{itemize}
 
-\item X
+\item По результатам измерений $P_L$ и $I$ найдем значение $r_L$ по следующей формуле $P_L = I^2r_L $. Теперь по следующей формуле 
+
+\begin{equation}
+U_L = I \sqrt{r_L^2 + (\Omega L)^2}
+\end{equation}
+
+вычислим $L$ ($\Omega = 50$ Гц).
+
+Результаты вычислений заносим в таблицу:
+
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline $r_L$, Ом & $x$, мм & $L$, Гн\\
+\hline 0,00145 & 5 & 0,01718 \\
+\hline 0,00117 & 7 & 0,01444 \\
+\hline 0,00105 & 9 & 0,01319 \\
+\hline 0,00097 & 11 & 0,01195 \\
+\hline 0,00082 & 13 & 0,01053 \\
+\hline 0,00078 & 15 & 0,01 \\
+\hline 0,00071 & 17 & 0,00917 \\
+\hline
+\end{tabular}
+\end{center} 
+\end{table}
+
+
+Построим графики зависимостей $L$ и $r_L$ от положения сердечника и определем по ним значения $L$ и 
+$r_L$ соответствующие резонансному (среднему) положению сердечника.
+
+\newpage
+
+\begin{center}
+
+\begin{figure}[h]
+	\center{\includegraphics[scale=0.6]{pics/graph1_quad_fff.jpg}}
+\end{figure}
+
+\end{center}
 
 \item X
 
