@@ -111,7 +111,117 @@
 
 \subsection{Теоретическое вступление и модель}
 
-XXX
+\subsubsection{Вынужденные колебания}
+
+Для схемы, изображенной ниже запишем правило Кирхгофа:
+
+\begin{center}
+
+    \includegraphics[scale=0.65]{pics/theory1.png} \\
+
+\end{center}
+
+\[
+\ddot{U}_{C}+2 \gamma \dot{U}_{C}+\omega_{0}^{2} U_{C}=\omega_{0}^{2} \mathcal{E}_{0} \cos \left(\omega t+\varphi_{0}\right)
+\]
+
+Решая данное дифференциальное уравнение получаем:
+
+\[ \boldsymbol{U}_{C}(t)=\boldsymbol{U}_{C 0} e^{i \omega t} \]
+
+\[ \boldsymbol{U}_{C 0}=\frac{\mathcal{E}_{0}}{i \omega C Z}, \quad Z=R+i\left(\omega L-\frac{1}{\omega C}\right) \]
+
+\[ \boldsymbol{I}_{0}=\frac{\mathcal{E}_{0}}{Z}, \quad \boldsymbol{U}_{R 0}=\frac{R \mathcal{E}_{0}}{Z}, \quad \boldsymbol{U}_{L 0}=i \omega L \frac{\mathcal{E}_{0}}{Z} \]
+
+Т.е. закон Ома можно переписать в следующем виде:
+
+\[ \boldsymbol{I}_{0}=\frac{\mathcal{E}_{0}}{Z}, \quad \boldsymbol{U}_{R 0}=Z_{R} \boldsymbol{I}_{0}, \quad \boldsymbol{U}_{C 0}=Z_{C} \boldsymbol{I}_{0}, \quad \boldsymbol{U}_{L 0}=Z_{L} \boldsymbol{I}_{0} , \text{ где}\]
+
+\[ Z_{R}=R, \quad Z_{L}=i \omega L, \quad Z_{C}=\frac{1}{i \omega C} \]
+
+Импедансы контура и его отдельных элементов -- комплексные числа -- могут быть представлены в показательной форме:
+
+\[
+Z=Z_{0} e^{i \psi}
+\]
+
+где $Z_{0}=|Z|-$ модуль комплексного числа, $\psi=\arg Z$ -- его аргумент (фаза). Для импеданса рассматриваемого последовательного контура при этом находим
+
+\[
+\begin{aligned}
+Z_{0}=\sqrt{(\operatorname{Re} Z)^{2}+(\operatorname{Im} Z)^{2}} &=\sqrt{R^{2}+\left(\omega L-\frac{1}{\omega C}\right)^{2}}=\frac{R}{\cos \psi_{I}} \\
+\operatorname{tg} \psi_{I} &=\frac{\operatorname{Im} Z}{\operatorname{Re} Z}=\frac{\omega L-\frac{1}{\omega C}}{R}
+\end{aligned}
+\]
+
+Отсюда получаем выражения для действительной части тока и средней мощности активных потерь в контуре:
+
+\[ I(t)=\frac{\mathcal{E}_{0}}{R} \cos \psi_{I} \cos \left(\omega t+\varphi_{0}-\psi_{I}\right) \]
+
+\[ P=\left\langle I^{2} R\right\rangle=\frac{\mathcal{E}_{0}^{2}}{2 R} \cos ^{2} \psi_{I},\]
+
+где угловые скобки означают усреднение по периоду колебаний.
+
+\subsubsection{Резонанс}
+
+Для исследования вынужденных колебаний и резонанса запишем вещественные части решений дифференциального уравнение, положив для сокраще­ния записи равной нулю начальную фазу: $\varphi_0$ = 0. В результате приходим к уравнениям
+
+\[\begin{gathered}
+I(t)=\frac{U_{R}(t)}{R}=I_{\omega} \cos \left(\omega t-\psi_{I}\right), \quad I_{\omega}=\frac{\mathcal{E}_{0}}{Z_{0}} \\
+Z_{0}=R \sqrt{1+\left[\frac{\rho}{R}\left(\frac{\omega}{\omega_{0}}-\frac{\omega_{0}}{\omega}\right)\right]^{2}}, \quad \psi_{I}=\operatorname{arctg}\left[\frac{\rho}{R}\left(\frac{\omega}{\omega_{0}}-\frac{\omega_{0}}{\omega}\right)\right] \\
+U_{C}(t)=U_{C \omega} \cos \left(\omega t-\psi_{C}\right), \quad U_{C \omega}=\mathcal{E}_{0} \frac{\rho}{Z_{0}} \frac{\omega_{0}}{\omega}, \quad \psi_{C}=\psi_{I}+\pi / 2, \\
+U_{L}(t)=U_{L \omega} \cos \left(\omega t-\psi_{L}\right), \quad U_{L \omega}=\mathcal{E}_{0} \frac{\rho}{Z_{0}} \frac{\omega}{\omega_{0}}, \quad \psi_{L}=\psi_{I}-\pi / 2 .
+\end{gathered}\]
+
+2) Поведение системы носит резонансный характер: при $\omega=\omega_{0}$, когда мнимая часть импеданса контура $\operatorname{Im} Z=0$ и соответственно
+
+\[
+\omega_{0} L=\frac{1}{\omega_{0} C}=\rho, \quad \operatorname{Im} Z=0, \quad Z_{0}=R, \quad \psi_{I}=0
+\]
+
+амплитуды тока и напряжения на сопротивлении $R$ достигают максимальных значений:
+
+\[
+I_{\omega_{0}}=\mathcal{E}_{0} / R, \quad U_{R \omega_{0}}=R I_{\omega_{0}}=\mathcal{E}_{0}
+\]
+
+\[
+I_{\omega}=\frac{\mathcal{E}_{0} / R}{\sqrt{1+(\tau \Delta \omega)^{2}}}, U_{C \omega}=\frac{Q \mathcal{E}_{0} \omega_{0} / \omega}{\sqrt{1+(\tau \Delta \omega)^{2}}}, U_{L \omega}=\frac{Q \mathcal{E}_{0} \omega / \omega_{0}}{\sqrt{1+(\tau \Delta \omega)^{2}}}
+\]
+
+В резонансе, когда для высокодобротного контура $\omega=\omega_{0}, \Delta \omega=0$, выражения для амплитуд тока и напряжений на ёмкости и индуктивности, фазовых сдвигов $\psi$ и их производных по частоте 
+
+$\psi^{\prime}=d \psi / d \omega$ принимают вид
+
+\[
+\begin{gathered}
+I_{\omega}\left(\omega_{0}\right)=\frac{\mathcal{E}_{0}}{R}, \quad \psi_{I}\left(\omega_{0}\right)=0 \\
+U_{C \omega}\left(\omega_{0}\right)=Q \mathcal{E}_{0}, \quad \psi_{C}\left(\omega_{0}\right)=\frac{\pi}{2} \\
+U_{L \omega}\left(\omega_{0}\right)=Q \mathcal{E}_{0}, \quad \psi_{L}\left(\omega_{0}\right)=-\frac{\pi}{2} \\
+\psi_{I}^{\prime}\left(\omega_{0}\right)=\psi_{L}^{\prime}\left(\omega_{0}\right)=\psi_{C}^{\prime}\left(\omega_{0}\right)=\tau
+\end{gathered}
+\]
+
+Для параллельного контура можно получить выражения для аналогичных величин:
+
+\[
+\begin{aligned}
+&I_{C}(t)=Q I_{0} \frac{\omega}{\omega_{0}} \frac{\cos \left(\omega t-\psi_{C}\right)}{\sqrt{1+(\tau \Delta \omega)^{2}}}, \quad \psi_{C}=\operatorname{arctg}(\tau \Delta \omega)-\frac{\pi}{2}+\frac{1}{Q} \\
+&I_{L}(t)=Q I_{0} \frac{\omega_{0}}{\omega} \frac{\cos \left(\omega t-\psi_{L}\right)}{\sqrt{1+(\tau \Delta \omega)^{2}}}, \quad \psi_{L}=\operatorname{arctg}(\tau \Delta \omega)+\frac{\pi}{2} \\
+&U(t)=Q \rho I_{0} \frac{\cos \left(\omega t-\psi_{U}\right)}{\sqrt{1+(\tau \Delta \omega)^{2}}}, \quad \psi_{U}=\operatorname{arctg}(\tau \Delta \omega)+\frac{\omega_{0}}{\omega} \frac{1}{Q}
+\end{aligned}
+\]
+
+При резонансе, когда в принятом выше приближении $\omega=\omega_{0}, \Delta \omega=0$, амплитуды токов в ветвях контура, напряжения на нём, фазовые сдвиги $\psi$ и их производные по циклической частоте $\psi^{\prime}=d \psi / d \omega$ принимают вид
+
+\[
+\begin{gathered}
+I_{C \omega}\left(\omega_{0}\right)=Q I_{0}, \quad \psi_{C}\left(\omega_{0}\right)=-\frac{\pi}{2}+\frac{1}{Q} \\
+I_{L \omega}\left(\omega_{0}\right)=Q I_{0}, \quad \psi_{L}\left(\omega_{0}\right)=\frac{\pi}{2} \\
+U_{\omega}\left(\omega_{0}\right)=Q^{2} R I_{0}, \quad \psi_{U}\left(\omega_{0}\right)=\frac{1}{Q} \\
+\psi_{C}^{\prime}\left(\omega_{0}\right)=\psi_{L}^{\prime}\left(\omega_{0}\right)=\psi_{U}^{\prime}\left(\omega_{0}\right)=\tau
+\end{gathered}
+\]
 
 \subsection{Экспериментальная установка}
 
@@ -132,7 +242,7 @@ XXX
 
 Подготовив установку, выставив пределы всех измерительных приборов и выкрутив ручку регулятора напряжения в положение напряжения $\approx 127 B$, можем проступать к снятию данных.
 
-Указатель на положение сердечника установили на отметку $x = 5 \text{ мм}$ и, перемещая сердечник шагами по 2 мм, снимаем зависимость тока $I$, напряжения $U_R, U_L, U_{R+L}$, а так же мощности $P_L$ от координаты сердечника $x$.
+Указатель на положение сердечника установили на отметку $x = 5 \pm 1 \text{ мм} $ и, перемещая сердечник шагами по 2 мм, снимаем зависимость тока $I$, напряжения $U_R, U_L, U_{R+L}$, а так же мощности $P_L$ от координаты сердечника $x$.
 
 Полученные результаты представлены в таблице.
 
@@ -206,10 +316,13 @@ $x,\text{ мм}$ & $C,\text{ мкФ}$ & $I,\ A$ & $U_C, B$ & $U_{\sum}\ B$ & $Q$
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline & Омметр & $LCR$ & График & Вект.диагр & $f\left(I, U_{\Sigma}\right)_{\text{рез}}$ & $f(Q)$ \\
-\hline \hline$r_{L}$ & 2170 & & & & & \\
-$L$ & $-$ & & & & $-$ & \\
+\begin{tabular}{|c|c|}
+\hline Для 50 Гц &\\
+\hline $\mathrm{L}, $ мН& $159,42 $\\
+\hline $\mathrm{r_L}, $ Ом& 3,696\\
+\hline Для 1 КГц &\\
+\hline $\mathrm{L}, $ мН& $141,58 $\\
+\hline $\mathrm{r_L}, $ Ом& 52,97\\
 \hline
 \end{tabular}
 \caption{Данные с мультиметра $GDM$ и $LCR$ измерителя}
@@ -236,59 +349,34 @@ U_L = I \sqrt{r_L^2 + (\Omega L)^2}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline $r_L$, Ом & $x$, мм & $L$, Гн\\
-\hline 0,00145 & 5 & 0,01718 \\
-\hline 0,00117 & 7 & 0,01444 \\
-\hline 0,00105 & 9 & 0,01319 \\
-\hline 0,00097 & 11 & 0,01195 \\
-\hline 0,00082 & 13 & 0,01053 \\
-\hline 0,00078 & 15 & 0,01 \\
-\hline 0,00071 & 17 & 0,00917 \\
+\hline 1,45 & 5 & 0,01718 \\
+\hline 1,17 & 7 & 0,01444 \\
+\hline 1,05 & 9 & 0,01319 \\
+\hline 0,97 & 11 & 0,01195 \\
+\hline 0,82 & 13 & 0,01053 \\
+\hline 0,78 & 15 & 0,01 \\
+\hline 0,71 & 17 & 0,00917 \\
 \hline
 \end{tabular}
 \end{center} 
 \end{table}
 
 
-Построим графики зависимостей $L$ и $r_L$ от положения сердечника и определем по ним значения $L$ и 
-$r_L$ соответствующие резонансному (среднему) положению сердечника.
+Построим графики зависимостей $L$ и $r_L$ от положения сердечника и по полученной аппроксимации зависимости определем по ним значения $L$ и $r_L$, соответствующие резонансному положению сердечника.
 
 %\newpage
 
 \begin{center}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\center{\includegraphics[scale=0.4]{pics/graph1_quad_fff.jpg}}
 \end{figure}
 
+\begin{figure}[!h]
+	\center{\includegraphics[scale=0.5]{L(x)_smakk.jpg}}
+\end{figure}
+
 \end{center}
-
-\item Построим векторную диаграмму напряжений.
-
-\begin{center}
-	\begin{figure}[h]
-		\center{\includegraphics[scale=0.5]{vec_diag.png}}
-	\end{figure}
-\end{center}
-
-Так же на диаграмме отложены $U_{L,\ \text{акт}}$ и $U_{L,\ \text{реакт}}$ составляющие напряжения на катушке. По ним рассчитаем значения $L$ и $r_L$.
-
-\begin{equation}
-\begin{gathered}
-\tg{\psi_1} = 0\\
-\tg{\psi_2} = \frac{\Omega L}{r_L}\\
-\tg{\psi_3} = \frac{\Omega L}{r_L + R}\\
-\end{gathered}
-\end{equation}
-
-Из этих уравнений получаем значения для $r_L = \dots$ и $L = \dots $ .
-
-По диаграмме получим значения для $\cos{\theta} = \dots$ -- сдвиг фаз между током и напряжением на катушке ($\tg{\psi_2}$). Сравним полученное значение с теоретическим по формуле
-
-\begin{equation}
-\bar{P}_{L}=U_{L} \cdot I \cos{\theta} =I^{2} \cdot r_{L}
-\end{equation}
-
-$\cos{\theta}_{\text{теор}} = \dots $ . Видно, что XX
 
 
 \item  Рассчитаем активное сопротивление катушки $r_L$ через ток и напряжение
@@ -300,7 +388,7 @@ $\cos{\theta}_{\text{теор}} = \dots $ . Видно, что XX
 
 Тогда получаем	
 
-\[r_L = \frac{U_{\Sigma, \text{ рез}}}{U_{C, \text { рез }} \cdot \Omega C} - R_1 = XX\]
+\[r_L = \frac{U_{\Sigma, \text{ рез}}}{U_{C, \text { рез }} \cdot \Omega C} - R_1 = 1,16 \text{ Ом}\]
 
 Так же рассчитаем $L$ и $r_L$ через добротность $Q$ при помощи следующих соотношений 
 
@@ -312,34 +400,28 @@ $\cos{\theta}_{\text{теор}} = \dots $ . Видно, что XX
 
 \[ Q=\frac{U_{C, \text{ рез}}}{U_{\Sigma, \text{ рез}}}\]
 
-Отсюда получаем $L = XX$, $r_L = XX$.
+Отсюда получаем $L = 120,32$; $r_L = 1,08 \text{ Ом}$.
 
 \item Сведем результаты измерений в таблицу:
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline & Омметр & $LCR$ & График & Вект.диагр & $f\left(I, U_{\Sigma}\right)_{\text{рез}}$ & $f(Q)$ \\
-\hline \hline$r_{L}$ & 2170 & & & & & \\
-$L$ & $-$ & & & & $-$ & \\
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline & Омметр & $LCR$ & График  & $f\left(I, U_{\Sigma}\right)_{\text{рез}}$ & $f(Q)$ \\
+\hline \hline$r_{L}$, Ом & 2,170 &3,70 & 0,88 & 1,16 & 1,08 \\
+$L$, мГн & $-$ & 159,42 & 111,47 & $-$ & 120,32\\
 \hline
 \end{tabular}
 \caption{Данные с мультиметра $GDM$ и $LCR$ измерителя}
 \end{center} 
 \end{table}
 
-\item Сравним величины $L$ и $r_L$ , определённые разными способами. Так же оценим
-погрешности и проанализируем возможные причины расхождения результатов.
-
-
-
-
 \end{itemize}
 
 
 \section{Вывод}
 
-X
+При выполнении данной лабораторной работы было получено, что разные методы дают величины одного порядка, различающиеся в пределах прогрешност между собой. Однако не все они попадают в пределах погрешности с действительной величиной. Причиной этого может являться эффект, при котором катушка и конденсатор имеют ненулевую действительную часть импиданса, в связи с чем происходят потери еще и на этих элементах и теоретическая зависимость будет иметь другой характер.
 
 \section{Литература}
 
