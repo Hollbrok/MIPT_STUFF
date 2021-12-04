@@ -1,0 +1,189 @@
+\documentclass[a4paper, 14pt]{extarticle}%тип документа
+\date{}
+
+%%%Библиотеки
+	%\usepackage[warn]{mathtext}	
+	\usepackage[T2A]{fontenc} % кодировка
+	\usepackage[utf8]{inputenc} % кодировка исходного текста
+	\usepackage[english,russian]{babel} % локализация и переносы
+	\usepackage{caption}
+	\usepackage{listings}
+	\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+	\usepackage{wasysym}
+	\usepackage{graphicx}%Вставка картинок правильная
+	\usepackage{float}%"Плавающие" картинки
+	\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+	\usepackage{fancyhdr} %загрузим пакет
+	\usepackage{lscape}
+	\usepackage{xcolor}
+	\usepackage[normalem]{ulem}
+	\usepackage{hyperref}
+
+%%%Конец библиотек
+
+
+\usepackage{graphicx}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%%\renewcommand{\footrulewidth}{ .0em }
+\usepackage[english,russian]{babel}
+\usepackage{multirow} % Слияние строк в таблице
+
+
+%Русский язык
+\usepackage[T2A]{fontenc} %кодировка
+\usepackage[utf8]{inputenc} %кодировка исходного кода
+\usepackage[english,russian]{babel} %локализация и переносы
+
+%Таблицы
+%\usepackage[table,xcdraw]{xcolor}
+%\usepackage{booktabs}
+
+%Математика
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+
+%отступы
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
+
+%Вставка картинок
+\usepackage{graphicx}
+\usepackage{wrapfig, caption}
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .jpeg}
+\newcommand\ECaption[1]{%
+     \captionsetup{font=footnotesize}%
+     \caption{#1}}
+
+%Таблицы
+%\usepackage[table,xcdraw]{xcolor}
+%\usepackage{booktabs}
+
+%Графики
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage[english,russian]{babel}
+\usepackage{multirow} % Слияние строк в таблице
+
+
+
+\newcommand
+{\un}[1]
+{\ensuremath{\text{#1}}}
+
+%%%Настройка ссылок
+	\hypersetup
+	{
+		colorlinks=true,
+		linkcolor=blue,
+		filecolor=magenta,
+		urlcolor=blue
+	}
+%%%Конец настройки ссылок
+
+%%%Настройка колонтитулы
+	\pagestyle{fancy}
+	\fancyhead{}
+	\fancyhead[L]{Лабораторная работа}
+	\fancyhead[R]{Талашкевич Даниил, группа Б01-009}
+	\fancyfoot[C]{\thepage}
+%%%конец настройки колонтитулы\
+\begin{document}
+
+%%%Начало титульника
+\begin{titlepage}
+
+	\newpage
+	\begin{center}
+		\normalsize Московский физико-технический институт \\(госудраственный 			университет)
+	\end{center}
+
+	\vspace{6em}
+
+	\begin{center}
+		\Large Лабораторная работа по РТ цепям\\
+	\end{center}
+
+	\vspace{1em}
+
+	\begin{center}
+		\large \textbf{Длинный цепи [23]}
+	\end{center}
+
+	\vspace{2em}
+
+	\begin{center}
+		\large Талашкевич Даниил Александрович\\
+		Группа Б01-009
+	\end{center}
+
+	\vspace{\fill}
+
+	\begin{center}
+	Долгопрудный \\2021
+	\end{center}
+	
+\end{titlepage}
+%%%Конец Титульника
+
+
+
+%%%Настройка оглавления и нумерации страниц
+	\thispagestyle{empty}
+	\newpage
+	\tableofcontents
+	\newpage
+	\setcounter{page}{1}
+%%%Настройка оглавления и нумерации страниц
+
+
+\section{Исследование параметров линии}
+
+Так как нет возможности собрать плату и измерить её параметры, выполнение этого пункта пропускаю.
+
+\section{Исследование переходных процессов}
+
+Исследования проводим в режиме $Transient MicroCap$, с подготовленной моделью (файл $TLine.cir$), который содержит длинную линию с волновым сопротивлением $w = 50$ Ом, без потерь, время распространения $\tau=\frac{l}{w}=10$ нс. Линия питается от источника единичного перепада напряжения $V=1$ В.
+
+Наблюдаются напряжения в узлах $e, u$ на входе и выходе линии (переменные $v(e), v(u))$ и входной/выходной токи $i(s) / i(l)$ через виртуальные резисторы $s, l$ с нулевыми сопротивлениями.
+
+В этой модели (файле) Подготовлен вывод графиков амплитуд падающей волны на входе $A(0, t)=\frac{v(e)+50 * i(s)}{2}$ и выходе $A(l, t)=\frac{v(u)+50 * i(l)}{2}($ плот 1$)$, амплитуд отраженной волны на входе $B(0, t)=\frac{v^{2}(e)-50 * i(s)}{2}$ и выходе $B(l, t)=\frac{v(u)-50 * i(l)}{2}($ плот 2$)$, напряжений на входе и выходе $v(e), v(u)$ (плот 3$)$ и токов на входе и выходе $50 * i(s), 50 * i(l)$ (плот 4). 
+
+Временной диапазон графиков выбран равным $20 \tau (\tau = 10$ нс). 
+
+
+\subsection{Согласованная линия}
+
+На схеме установим $R_{s}=R_{l}=50$ Ом, и выведем графики (через меню $Analisys/Transient/Run$). Проанализируем графики амплитуды падаюшей волны, напряжений и токов. А так же, измерив по графикам установившиеся значения $v(u)$ и $i(l) w$, убедимся в том, что источник отдает в нагрузку предельную мощность:
+
+$P=v(u) i(l)=\frac{V^{2}}{4 R_{s}}, V=1 \mathrm{~B}:$
+
+\[P w=v(u) i(l) w=\frac{V^{2}}{4 R_{s}} w=0,25 .\]
+
+
+
+\subsection{Рассогласованный источник}
+
+
+\subsection{Рассогласованная нагрузка}
+
+
+\subsection{Рассогласованный источник и нагрузка}
+
+
+\subsection{Емкостная нагрузка}
+
+
+\section{Литература}
+
+\begin{itemize}
+
+\item Григорьев А.А. Лекции по теории сигналов. - М.: МФТИ, $2013 .$
+
+\item Методические указания к работе №$23 (\text{Длинный цепи})$.
+
+\end{itemize}
+
+
+\end{document}
