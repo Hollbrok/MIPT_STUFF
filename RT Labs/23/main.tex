@@ -161,16 +161,246 @@ $P=v(u) i(l)=\frac{V^{2}}{4 R_{s}}, V=1 \mathrm{~B}:$
 
 \[P w=v(u) i(l) w=\frac{V^{2}}{4 R_{s}} w=0,25 .\]
 
+\subsubsection{Выполнение}
 
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/1.jpg}
+			\caption{согласованная линия, 1}
+			\label{1.1}
+\end{figure}
+
+\newpage
+
+\subsubsection{Полученные результаты}
+
+Измерянные значения:
+
+\[ v(u) = 0,5 \text{В}\  i(l) = 0,01 \text{А} ,\]
+по ним получаем: 
+
+\[ P=v(u)i(l)=0,005Вт= \frac{V^2}{4R_s} = 1В. \]
+
+Отсюда можно сделать вывод, что формула верна.
 
 \subsection{Рассогласованный источник}
 
+Варьированием установим $R_{s}=\frac{w}{3}\left[\rho_{s}=\frac{R_{s}-w}{R_{s}+w}=-\frac{1}{2}\right]$. ($Transient/Stepping$ - [$From,To|StepValue$ $]=[50 / 3,50 / 3 \mid 1])$. Теперь пересчитаем графики по $Transient/Run$. И, измерив установившиеся значения $v(u)$ и $i(l) w$, проверим, что отдаваемая в нагрузку мощность $P$ меньше мощности источника в $\left(1-\rho_{s}^{2}\right)$ раз, т.е.:
+
+\[
+P w=v(u) i(l) w=\frac{V^{2}}{4 R_{s}} w\left(1-\rho_{s}^{2}\right)=0.75\left(1-\frac{1}{4}\right)=0.5625 .
+\]
+
+Повторим все это при $R_{s}=3 w\left[\rho_{s}=\frac{R_{s}-w}{R_{s}+w}=+\frac{1}{2}\right]$. Проверим, что
+
+\[
+P w=v(u) i(l) w=\frac{V^{2}}{4 R_{s}} w\left(1-\rho_{s}^{2}\right)=\frac{0.25}{3}\left(1-\frac{1}{4}\right)=0.0625 .
+\]
+
+\subsubsection{Выполнение}
+
+Установим $R_{S}=\frac{\omega}{3} \text{ Ом} ,\ \omega=50 \text{ Ом},\ \rho_{S}=\frac{R_{S}-\omega}{R_{S}+\omega}=-\frac{1}{2}$. 
+
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/2.jpg}
+			\caption{Рассогласованный источник, 1}
+			\label{2.1}
+\end{figure}
+
+Повторим те же измерения при $R_{S}=3 \omega$, $\rho_{S}=\frac{1}{2}$:
+
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/3.jpg}
+			\caption{Рассогласованный источник, 2}
+			\label{2.2}
+\end{figure}
+
+\subsubsection{Полученные результат}
+
+\[v(u)=0,75 \text{B},\ i(l) \omega=0,75\text{B}\]
+
+\[ P \omega=v(u) i(l) \omega=0,5625=\frac{V^{2}}{4 R_{S}} \omega\left(1-\rho_{S}^{2}\right),
+\]
+
+что говорит о справедливости утверждения о том, что отдаваемая в нагрузку мозность $P$ меньше мощности источника в $(1 - \rho_{S}^2) \text{ раз}.$
+
+Полученный значения, при $R_{S}=3 \omega$, $\rho_{S}=\frac{1}{2}$:
+
+\[v(u)=0,25 \text{B},\ i(l) \omega=0,25\text{B}\]
+
+\[ P \omega=v(u) i(l) \omega=0,0625=\frac{V^{2}}{4 R_{S}} \omega\left(1-\rho_{S}^{2}\right),
+\]
+
+аналогично следует вывод о том, что мощность, отдаваемая в нагрузку меньше мощности источника в $(1 - \rho_{S}^2) \text{ раз}.$
 
 \subsection{Рассогласованная нагрузка}
 
+Установим варьированием $R_{l}=\frac{w}{3}\left[\rho_{l}=-\frac{1}{2}\right]$. Выясним характер переходных процессов, а так же измерим установившиеся значения амплитуд волн, напряжений и токов.
+
+Повторим все наблюдения при $R_{l}=0\left[\rho_{l}=-1\right], R_{l}=3 w$ $\left[\rho_{l}=+\frac{1}{2}\right], R_{l}=50 k \simeq \infty\left[\rho_{l}=+1\right]$.
+
+\subsubsection{Выполнение}
+
+\[R_l =\frac{w}{3},\  v(u)=0,25 \text{B},\ i(l)w =0,75 \text{В} :\]
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/4.jpg}
+			%\caption{Рассогласованная нагрузка, 1}
+			\label{3.1.1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/5.jpg}
+			%\caption{Рассогласованная нагрузка, 1}
+			\label{3.1.2}
+\end{figure}
+
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/6.jpg}
+			%\caption{Рассогласованная нагрузка, 1}
+			\label{3.1.3}
+\end{figure}
+
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/7.jpg}
+			\caption{Рассогласованная нагрузка, 1}
+			\label{3.1.4}
+\end{figure}
+
+\[R_l =3w,\  v(u)=0,75 \text{B},\ i(l)w =0,25 \text{В} :\]
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/8.jpg}
+			%\caption{Рассогласованная нагрузка, 2}
+			\label{3.2.1}
+\end{figure}
+
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/9.jpg}
+			\caption{Рассогласованная нагрузка, 2}
+			\label{3.2.2}
+\end{figure}
+
+\[R_l =0w,\  v(u)=0,00 \text{B},\ i(l)w =1,00 \text{В} :\]
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/10.jpg}
+			%\caption{Рассогласованная нагрузка, 2}
+			\label{3.3.1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/11.jpg}
+			\caption{Рассогласованная нагрузка, 3}
+			\label{3.3.2}
+\end{figure}
+
+\[R_l =\infty,\  v(u)=1,00 \text{B},\ i(l)w =0,00 \text{В} :\]
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/12.jpg}
+			%\caption{Рассогласованная нагрузка, 2}
+			\label{3.4.1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/13.jpg}
+			\caption{Рассогласованная нагрузка, 4}
+			\label{3.4.2}
+\end{figure}
+
+\subsubsection{Полученные результаты}
+
+XX
 
 \subsection{Рассогласованный источник и нагрузка}
 
+Установим на схеме $R_{s}=50 / 3\left[\rho_{s}=-\frac{1}{2}\right] .$ Установив варьированием $R_{l}=0\left[\rho_{l}=-1\right], \rho_{s} \rho_{l}=\frac{1}{2}$, изобразим полученные графики. По ним убедимся, что амплитуда падающей волны нарастает как последовательность частичных сумм прогрессии:
+
+
+\[
+A=\frac{w}{w+R_{s}}\left(1+\rho_{s} \rho_{l}+\left(\rho_{s} \rho_{l}\right)^{2}+\ldots\right)=\frac{3}{4}\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\ldots\right) .
+\]
+
+Как итог, объясним ход графиков амплитуд волн, напряжений и токов и измерим установившиеся значения.
+
+Повторим наблюдения при $R_{l}=50 k \simeq \infty\left[\rho_{l}=1\right], \rho_{s} \rho_{l}=-\frac{1}{2}$ : 
+
+\[A=\frac{w}{w+R_{s}}\left(1+\rho_{s} \rho_{l}+\left(\rho_{s} \rho_{l}\right)^{2}+\ldots\right)=\frac{3}{4}\left(1-\frac{1}{2}+\frac{1}{4}-\frac{1}{8}+\ldots\right)\]
+
+Установим на схеме $R_{s}=50 * 3\left[\rho_{s}=+\frac{1}{2}\right]$ и повторим наблюдения при $R_{l}=0\left[\rho_{l}=-1\right]$ :
+
+\[A=\frac{w}{w+R_{s}}\left(1+\rho_{s} \rho_{l}+\left(\rho_{s} \rho_{l}\right)^{2}+\ldots\right)=\frac{1}{4}\left(1-\frac{1}{2}+\frac{1}{4}-\frac{1}{8}+\ldots\right)\]
+
+и $R_{l}=50 k \simeq \infty\left[\rho_{l}=1\right]$ :
+
+\[A=\frac{w}{w+R_{s}}\left(1+\rho_{s} \rho_{l}+\left(\rho_{s} \rho_{l}\right)^{2}+\ldots\right)=\frac{1}{4}\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\ldots\right) .\]
+
+Установим на схеме $R_{s}=0\left[\rho_{s}=-1\right]$ (предельно сильное рассогласование на источнике) и повторим наблюдения при
+
+\[
+\begin{aligned}
+R_{l}=50 k, &\left[\rho_{l}=1\right] \quad \Rightarrow A=(1-1+1-1+\ldots), \\
+R_{l}=500, \quad\left[\rho_{l}=0.8\right] \quad & \Rightarrow A=\left(1-\rho_{l}+\rho_{l}^{2}-\rho_{l}^{3}+\ldots\right), \\
+R_{l}=0, \quad\left[\rho_{l}=1\right] \quad & \Rightarrow A=(1+1+1+1+\ldots), \\
+R_{l}=5, \quad\left[\rho_{l}=-0.8\right] \quad & \Rightarrow A=\left(1+\rho_{l}+\rho_{l}^{2}+\rho_{l}^{3}+\ldots\right).
+\end{aligned}
+\]
+
+\subsubsection{Выполнение}
+
+\[R_{S}=\frac{50}{3},\ \rho_{S}=-\frac{1}{2},\  R_{l}=0,\ \rho_{l}=-1,\ \rho_{S} \rho_{l}=\frac{1}{2},\]
+
+\[ \text{где }A=\frac{\omega}{\omega+R_{S}}\left(1+\rho_{S} \rho_{l}+\left(\rho_{S} \rho_{l}\right)^{2}+\ldots\right)=\frac{3}{4}\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\ldots\right) :\]
+
+\newpage
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/14.jpg}
+			\caption{Рассогласованный источник и нагрузка, 1}
+			\label{4.1}
+\end{figure}
+
+\[R_{S}=\frac{50}{3},\ \rho_{S}=-\frac{1}{2},\  R_{l}=50k \simeq \infty,\ \rho_{l}=1,\ \rho_{S} \rho_{l}=-\frac{1}{2},\]
+
+\[ \text{где }A=\frac{\omega}{\omega+R_{S}}\left(1+\rho_{S} \rho_{l}+\left(\rho_{S} \rho_{l}\right)^{2}+\ldots\right)=\frac{3}{4}\left(1-\frac{1}{2}+\frac{1}{4}-\frac{1}{8}+\ldots\right) :\]
+
+\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1.1\linewidth]{./graphs/15.jpg}
+			\caption{Рассогласованный источник и нагрузка, 2}
+			\label{4.1}
+\end{figure}
+
+
+
+\subsubsection{Полученные результаты}
+
+XX
 
 \subsection{Емкостная нагрузка}
 
@@ -179,7 +409,7 @@ $P=v(u) i(l)=\frac{V^{2}}{4 R_{s}}, V=1 \mathrm{~B}:$
 
 \begin{itemize}
 
-\item Григорьев А.А. Лекции по теории сигналов. - М.: МФТИ, $2013 .$
+\item Григорьев А.А. Лекции по теории длинных цепец. - М.: МФТИ, $2013 .$
 
 \item Методические указания к работе №$23 (\text{Длинный цепи})$.
 
