@@ -242,12 +242,13 @@ $R_{1(2)} = [100k,  \: 900k \:| \: 200k]$ и емкости первого и в
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{c|c|c|c}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
 		$F$                         & $1$ & $0.5$ & $2$ \\ \hline
 		$u_1(f_0)_{\text{эксп}}$          & 0.5 & 0.8   & 0.2 \\ \hline
 		$u_1(f_0)_{\text{теор}}$ & 0.5 & 0.8   & 0.2 \\ \hline \hline
 		$u_2(f_0)_{\text{эксп}}$          & 0.5 & 0.4   & 0.2 \\ \hline
-		$u_2(f_0)_{\text{теор}}$ & 0.5 & 0.4   & 0.2 \\ 
+		$u_2(f_0)_{\text{теор}}$ & 0.5 & 0.4   & 0.2 \\ \hline
 	\end{tabular}
 	\caption{Проверка формул}
 \end{table}
@@ -340,7 +341,23 @@ $F = 10: \nu = 953.43k, 1.005M, 1.054M$.
 
 
 \subsection{затухания в контуре}
-При критической связи $F = 1$ измерим затухания на втором контуре при расстройках на декаду $f_0$. Изучим зависимость уровней затухания от $F = [1,5.5|1.5]$. Занесём результаты в таблицу \ref{t2}.
+При критической связи $F = 1$ измерим затухания на втором контуре при расстройках на декаду $f_0$. Изучим зависимость уровней затухания от $F = [1,5.5|1.5]$.
+
+
+\begin{table}[]
+	\label{t2}
+	\begin{tabular}{|c|c|c|}
+	\hline 
+		& \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Уровень затухания,\\ $\frac{dB}{\text{дек}}$\end{tabular}} \\ \hline
+		$F$   & \multicolumn{1}{c|}{f = $100k$}                              & f = $10Meg$                              \\ \hline
+		$1$   & \multicolumn{1}{c|}{$-94$}                                   & $-133$                                   \\ \hline
+		$2.5$ & \multicolumn{1}{c|}{$-85$}                                   & $-126$                                   \\ \hline
+		$4$   & \multicolumn{1}{c|}{$-82$}                                   & $-122$                                   \\ \hline
+		$5.5$ & \multicolumn{1}{c|}{$-79$}                                   & $-119$                    \\ \hline       
+	\end{tabular}
+	\caption{Зависимость уровней затухания от $F$}.
+\end{table} 
+
 
 \begin{figure}[h!]
 	\centering
@@ -355,27 +372,13 @@ $F = 10: \nu = 953.43k, 1.005M, 1.054M$.
             \caption{варьирование $F [1, 5.5|1.5]$}
 	\label{A}
 \end{figure}
-
+\newpage
 \begin{figure}[h!]
 	\centering
 			\includegraphics[width=1.1\linewidth]{1.8_VarR.jpg}
             \caption{варьирование $R = [70k, 70k|1k]$}
 	\label{A}
 \end{figure}
-
-
-\begin{table}[h]
-	\caption{Зависимость уровней затухания от $F$}.
-	\label{t2}
-	\begin{tabular}{c|c|c} 
-		& \multicolumn{2}{c}{\begin{tabular}[c]{@{}c@{}}Уровень затухания,\\ $\frac{dB}{\text{дек}}$\end{tabular}} \\ \hline
-		$F$   & \multicolumn{1}{c|}{f = $100k$}                              & f = $10Meg$                              \\ \hline
-		$1$   & \multicolumn{1}{c|}{$-94$}                                   & $-133$                                   \\ \hline
-		$2.5$ & \multicolumn{1}{c|}{$-85$}                                   & $-126$                                   \\ \hline
-		$4$   & \multicolumn{1}{c|}{$-82$}                                   & $-122$                                   \\ \hline
-		$5.5$ & \multicolumn{1}{c|}{$-79$}                                   & $-119$                    \\            
-	\end{tabular}
-\end{table} 
 
 \subsection{плоты 2,4 (ЧХ и графики вносимых проводимостей)}
 
@@ -511,7 +514,8 @@ b) провал на втором контуре ($F = 1$) c) подъём на 
 
 \begin{table}[h!]
 	\label{t3}
-	\begin{tabular}{c|c|c|c} 
+	\begin{tabular}{|c|c|c|c|}
+		\hline 
 		$F$               & $2$    & $3$    & $4$    \\ \hline
 		$f_{\text{пров}},~\text{Гц}$ & $990k$ & $985k$ & $980k$ \\ \hline
 	\end{tabular}
