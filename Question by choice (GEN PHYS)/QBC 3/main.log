@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.9.6)  17 DEC 2021 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.9.6)  23 DEC 2021 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,16 +803,16 @@ LaTeX Info: Redefining \nameref on input line 55.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
 
 
 (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
@@ -827,12 +827,12 @@ been already used, duplicate ignored
                    \relax 
 l.102 	\newpage
                 [1]
-<pic_1.png, id=43, 510.90875pt x 352.31625pt>
+<pic_1.png, id=58, 510.90875pt x 352.31625pt>
 File: pic_1.png Graphic file (type png)
 <use pic_1.png>
 Package pdftex.def Info: pic_1.png  used on input line 118.
 (pdftex.def)             Requested size: 255.45375pt x 176.15768pt.
-<pic_2.png, id=44, 396.7322pt x 383.93437pt>
+<pic_2.png, id=59, 396.7322pt x 383.93437pt>
 File: pic_2.png Graphic file (type png)
 <use pic_2.png>
 Package pdftex.def Info: pic_2.png  used on input line 125.
@@ -842,67 +842,79 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.128 
-       [1 <./pic_1.png>] [2 <./pic_2.png (PNG copy)>]
-<9.3.5.png, id=63, 709.90219pt x 255.20343pt>
-File: 9.3.5.png Graphic file (type png)
-<use 9.3.5.png>
-Package pdftex.def Info: 9.3.5.png  used on input line 149.
-(pdftex.def)             Requested size: 145.11053pt x 52.16516pt.
- [3 <./9.3.5.png (PNG copy)>]
-<9.3.6.png, id=72, 693.34032pt x 246.1697pt>
-File: 9.3.6.png Graphic file (type png)
-<use 9.3.6.png>
-Package pdftex.def Info: 9.3.6.png  used on input line 172.
-(pdftex.def)             Requested size: 145.11053pt x 51.52061pt.
-<9.3.7.png, id=73, 499.8675pt x 316.18124pt>
-File: 9.3.7.png Graphic file (type png)
-<use 9.3.7.png>
-Package pdftex.def Info: 9.3.7.png  used on input line 181.
-(pdftex.def)             Requested size: 145.11053pt x 91.7867pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./9.3.6.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 195
+       [1 <./pic_1.png>]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 142
 .
  (/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [5 <./9.3.7.png (PNG copy)>]
-<4.2.png, id=93, 712.16063pt x 402.75468pt>
+)
+[2 <./pic_2.png (PNG copy)>]
+<pic_3.png, id=75, 328.97906pt x 223.58531pt>
+File: pic_3.png Graphic file (type png)
+<use pic_3.png>
+Package pdftex.def Info: pic_3.png  used on input line 152.
+(pdftex.def)             Requested size: 197.38895pt x 134.1522pt.
+ [3 <./pic_3.png (PNG copy)>] [4]
+<9.3.5.png, id=90, 709.90219pt x 255.20343pt>
+File: 9.3.5.png Graphic file (type png)
+<use 9.3.5.png>
+Package pdftex.def Info: 9.3.5.png  used on input line 204.
+(pdftex.def)             Requested size: 145.11053pt x 52.16516pt.
+ [5 <./9.3.5.png (PNG copy)>] [6]
+Overfull \hbox (20.78206pt too wide) in paragraph at lines 242--243
+\T2A/cmr/m/n/14.4 до-мене бла-го-да-ря об-мен-но-му вза-и-мо-дей-ствию ($[]$). 
+
+ []
+
+<9.3.6.png, id=105, 693.34032pt x 246.1697pt>
+File: 9.3.6.png Graphic file (type png)
+<use 9.3.6.png>
+Package pdftex.def Info: 9.3.6.png  used on input line 256.
+(pdftex.def)             Requested size: 145.11053pt x 51.52061pt.
+<9.3.7.png, id=106, 499.8675pt x 316.18124pt>
+File: 9.3.7.png Graphic file (type png)
+<use 9.3.7.png>
+Package pdftex.def Info: 9.3.7.png  used on input line 265.
+(pdftex.def)             Requested size: 145.11053pt x 91.7867pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./9.3.6.png (PNG copy)>] [8 <./9.3.7.png (PNG copy)>]
+<4.2.png, id=123, 712.16063pt x 402.75468pt>
 File: 4.2.png Graphic file (type png)
 <use 4.2.png>
-Package pdftex.def Info: 4.2.png  used on input line 206.
+Package pdftex.def Info: 4.2.png  used on input line 290.
 (pdftex.def)             Requested size: 193.47578pt x 109.41507pt.
- [6 <./4.2.png (PNG copy)>] (./main.aux)
+ [9 <./4.2.png (PNG copy)>] [10] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 60F2714B825915B7CBD715A6237D20E3;939.
+(rerunfilecheck)             Checksum: 6311B92033C9E9854D5E079DBFC36497;1696.
  ) 
 Here is how much of TeX's memory you used:
- 15394 strings out of 478994
- 221981 string characters out of 5864752
- 558567 words of memory out of 5000000
- 32615 multiletter control sequences out of 15000+600000
+ 15413 strings out of 478994
+ 222205 string characters out of 5864752
+ 558570 words of memory out of 5000000
+ 32625 multiletter control sequences out of 15000+600000
  415623 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,74p,1541b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,74p,1801b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm2074.pfb>
-Output written on main.pdf (8 pages, 481263 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm20
+74.pfb>
+Output written on main.pdf (12 pages, 554420 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
