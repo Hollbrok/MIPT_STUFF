@@ -1,0 +1,7 @@
+# какие файлы игнорить
+*.aux
+*.dvi
+*.toc
+*.out
+*.log
+*.synctex.gz

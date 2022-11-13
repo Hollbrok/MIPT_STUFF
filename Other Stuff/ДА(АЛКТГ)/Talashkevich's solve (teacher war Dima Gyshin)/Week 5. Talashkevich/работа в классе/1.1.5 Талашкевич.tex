@@ -1,0 +1,181 @@
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+
+% Русский язык
+\usepackage[T2A]{fontenc} % кодировка
+\usepackage[utf8]{inputenc} % кодировка исходного текста
+\usepackage[english,russian]{babel} % локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+
+
+\usepackage{wasysym}
+
+%Заговолок
+\author{Талашкевич Даниил Александрович}
+
+\title{Неделя № 5. КЛАССНАЯ РАБОТА.Графы II. Деревья и раскраски}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+\begin{center}
+\itshape
+\bfseries
+{ \Large Problems:}
+\end{center}
+
+{\bf 1.} Дерево имеет 2020 вершин. Верно ли, что в нём найдется путь длины 3? 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+Возьмем граф-звезду $K_{2020}$, которая является деревом. Максимальная длина пути будет равна 2. Приведен контр пример.
+
+\begin{flushright}
+\begin{large}
+\textbf {не верно}
+\end{large}
+\end{flushright}
+
+{\bf 2.} Существует ли дерево на 9 вершинах, в котором 2 вершины имеют степень 5? 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+Предположим, что такое дерево $G$ существует. Пусть $U$ и $V$ различные его вершины, со степенью $5$. В $G$ имеется ровно $5$ различных ребер с концом в $U$. Не более чем $(5+5) - 9 = 1$ из них имеет конец в $V$, так что найдется еще хотя бы $4$ различных ребра,отличных от рассмотренных, с концом в $V$.
+
+Итак, в $G$ не менее девяти различных ребер, тогда вершин $V = |E| + 1 \geqslant 10$. А так как $9 < 10$, то получаем противоречие.
+
+\begin{flushright}
+\begin{large}
+\textbf {не может}
+\end{large}
+\end{flushright}
+
+{\bf 3. }В дереве нет вершин степени $2$. Докажите, что количество висячих вершин (т. е. вершин степени $1$) больше половины общего количества вершин. 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+Пусть всего в графе $G$ вершин $V(G) = n$. ( Так как наш граф -- это дерево, то  $1 = V(G) - E \Rightarrow E = n -1.$
+
+Обозначим кол-во вершин, степени $1$ за $k$, тогда $k \leqslant n$.
+Тогда все вершины степени отличной от $1$ обозначим за $U_i$, где $i = \{ 1,\dots , n - k\} $. 
+
+А вершины степени $1$ за $U_j$, где $j = \{ n-k+1,\dots , n\} $.
+
+По леммe о рукопожатия получаем, что $ \sum\limits_{i = 1}^{n-k}U_i + k = 2|E| = 2(n-1)$. т.к. все вершины со степенью отличной от нуля не могу иметь степень 2, то их степень $deg(U_i) \geqslant 3 \Rightarrow \sum\limits_{i = 1}^{n-k}U_i \geqslant 3(n-k)$.
+
+Окончательно имеем $ \sum\limits_{i = 1}^{n-k}U_i + k  \leqslant 3(n-k) + k \Rightarrow 3(n-k) + k \leqslant 2(n-1) \Rightarrow k \geqslant \frac{n}{2}+1 \Rightarrow k > \frac{n}{2}$.
+
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+\newpage
+{\bf 4. }Докажите, что любой связный граф имеет остовное дерево. 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+Докажем индукцией по числу ребер $n$ ( $n \geqslant 0$).
+
+База индукции $n = 0$. Очевидна, получаем множества не связных подграфов графа $G$,состоящих просто из $1$ вершины. А так как 1 вершина -- это дерево, то все выполняется.
+
+Пусть при $n=k$ выполняется. Докажем для $n = k + 1$.
+
+Если в графе $G$ если ребро, после удаления которого граф $G$ остается связным и ,получается, имеет кол-во ребер $|E| = n = k$, что по предположению индукции верно,тогда имеем граф $G(|E| = k+1)$,который имеет остовое дерево и подходит для $G$.
+
+Если такого ребра нет, то получаем после удаления несвязный граф и, соответсвенно, будет остовое дерево.
+
+
+\begin{flushright}
+\begin{large}
+\textbf {Доказано}
+\end{large}
+\end{flushright}
+{\bf 5.} 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: }
+\end{large}
+\end{flushright}
+{\bf 6.} 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: }
+\end{large}
+\end{flushright}
+{\bf 7.} 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: }
+\end{large}
+\end{flushright}
+{\bf 8.} 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: }
+\end{large}
+\end{flushright}
+{\bf 9.} 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: }
+\end{large}
+\end{flushright}
+{\bf 10.} 
+\begin{center}
+\bfseries
+{\Large Решение: }
+\end{center}
+
+\begin{flushright}
+\begin{large}
+\textbf {Ответ: }
+\end{large}
+\end{flushright}
+
+\end{document}
+
+
