@@ -1,7 +1,0 @@
-CLEAN:
-  del *.CIR_bak
-  del *.inx
-   
- 
-
-  

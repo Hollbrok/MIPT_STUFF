@@ -1,6 +1,0 @@
-\babel@toc {russian}{}
-\contentsline {section}{\numberline {1}Аннотация}{1}{section.1}%
-\contentsline {section}{\numberline {2}Экспериментальная установка}{1}{section.2}%
-\contentsline {section}{\numberline {3}Ход работы}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}1}{2}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Вывод}{2}{section.4}%
